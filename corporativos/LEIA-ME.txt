@@ -1,0 +1,15 @@
+JL FOTOGRAFIA — ORÇAMENTO CORPORATIVO
+
+1. Abra index.html para visualizar.
+2. Para ativar o WhatsApp, edite config.js e informe seu número com DDI + DDD.
+   Exemplo: 5534999999999
+3. Para inserir o vídeo da Giszelle:
+   - renomeie o arquivo para giszelle.mp4
+   - coloque dentro da pasta assets/
+4. Os valores estão no arquivo index.html e podem ser alterados facilmente.
+5. O site é responsivo e pode ser publicado no GitHub Pages, Hostinger, Locaweb etc.
+
+Valores atuais:
+- Estúdio Adriana Mendes: R$ 690
+- Na empresa da cliente: R$ 790
+- Presença de Marca: R$ 1.090
