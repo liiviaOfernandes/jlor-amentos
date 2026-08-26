@@ -1,6 +1,4 @@
-const SITE_CONFIG = {
-  // Coloque seu WhatsApp com DDI + DDD + número, somente números.
-  // Exemplo: "5534999999999"
-  whatsapp: "",
+window.SITE_CONFIG = {
+  whatsapp: "5534992036533",
   instagram: "joselivia.fotografia"
 };

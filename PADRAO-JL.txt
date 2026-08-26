@@ -1,0 +1,27 @@
+JL FOTOGRAFIA — PADRÃO VISUAL DOS ORÇAMENTOS
+
+PALETA OFICIAL
+Rich Black:   #0D1321
+Oxford:       #1D2D44
+Chambray:     #3E5C76
+Silver Lake:  #738CAB
+Platinum:     #E0E1DC
+
+LOGOS
+assets/logo-azul.png   -> uso sobre fundos claros
+assets/logo-branca.png -> uso sobre fundos escuros/fotos
+
+PADRÃO PARA TODO NOVO ORÇAMENTO
+- Manter a paleta azul acima.
+- Ter uma seção "Sobre os fotógrafos" apresentando Lívia e José.
+- Exibir valores dos pacotes com clareza.
+- Informar entrada/sinal de R$ 100 para reserva da data.
+- Informar parcelamento em até 4x sem juros.
+- Informar 5% de desconto à vista (Pix/depósito/dinheiro).
+- Incluir prazos e informações importantes.
+- Manter o visual mobile e editorial.
+
+PÁGINAS ATUALIZADAS NESTA VERSÃO
+- Central de orçamentos
+- Corporativo / profissional
+- Batizado

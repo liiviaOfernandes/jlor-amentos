@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#161412">
+  <meta name="theme-color" content="#0D1321">
   <title>Ensaio Corporativo | JL Fotografia</title>
   <meta name="description" content="Ensaio corporativo e profissional em estúdio ou na sua empresa. Uma experiência pensada para posicionar sua imagem com personalidade e profissionalismo.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +14,7 @@
 <body>
   <header class="hero" id="inicio">
     <nav class="nav shell">
-      <a class="brand" href="#inicio" aria-label="JL Fotografia">
-        <span class="brand-mark">JL</span>
-        <span class="brand-text">fotografia</span>
-      </a>
+      <a class="brand brand-logo" href="#inicio" aria-label="JL Fotografia"><img src="assets/logo-branca.png" alt="JL Fotografia"></a>
       <a class="nav-cta" href="#pacotes">Ver investimento</a>
     </nav>
 
@@ -41,6 +38,7 @@
   </header>
 
   <main>
+    <!-- Sobre -->
     <section class="intro shell" id="sobre">
       <div>
         <span class="eyebrow">Ensaio corporativo</span>
@@ -52,7 +50,7 @@
       </div>
     </section>
 
-
+    <!-- Fotógrafos -->
     <section class="photographers shell" id="fotografos">
       <div class="photographers-photo">
         <img src="assets/IMG_4769.JPG.jpeg" alt="Lívia e José, fotógrafos da JL Fotografia">
@@ -79,95 +77,14 @@
       </div>
     </section>
 
+    <!-- Galeria de referências -->
     <section class="mosaic shell" aria-label="Galeria de referências">
-      <figure class="mosaic-a"><img src="assets/IMG_4766.JPG.jpeg" alt="Retrato profissional sofisticado"></figure>
-      <figure class="mosaic-b"><img src="assets/J&L-3251.jpg" alt="Retrato corporativo com blazer"></figure>
-      <figure class="mosaic-c"><img src="assets/IMG_4775.JPG.jpeg" alt="Retrato profissional em fundo escuro"></figure>
+      <figure class="mosaic-a"><img src="assets/IMG_4775.JPG.jpeg" alt="Retrato profissional em fundo escuro"></figure>
+      <figure class="mosaic-b"><img src="assets/IMG_4768.JPG.jpeg" alt="Retrato profissional sofisticado"></figure>
+      <figure class="mosaic-c"><img src="assets/J&L-3251.jpg" alt="Retrato corporativo com blazer"></figure>
     </section>
 
-    <section class="studio" id="estudio">
-      <div class="studio-inner shell">
-        <div class="studio-copy">
-          <span class="eyebrow light">Nosso cenário de destaque</span>
-          <h2>Estúdio<br><em>Adriana Mendes</em></h2>
-          <p>Uma estrutura preparada para criar retratos limpos, sofisticados e versáteis, com iluminação profissional e diferentes possibilidades de composição.</p>
-          <div class="studio-note">
-            <strong>Estúdio Adriana Mendes incluso no pacote.</strong>
-            <span>Um espaço preparado para retratos profissionais, com diferentes possibilidades de luz, cenário e composição.</span>
-          </div>
-          <a class="btn btn-light" href="#pacotes">Quero fotografar no estúdio</a>
-        </div>
-        <div class="studio-photo">
-          <img src="assets/IMG_4772.JPG.jpeg" alt="Referência de retrato em estúdio">
-          <span class="photo-tag">Studio experience</span>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="experience" id="experiencia">
-      <div class="experience-grid shell">
-        <div class="experience-media">
-          <div class="reels-frame">
-            <video id="gVideo" autoplay muted loop playsinline poster="assets/giszelle-foto.jpg">
-              <source src="assets/Uma nova fase(MP4).mp4" type="video/mp4">
-              Seu navegador não suporta vídeo.
-            </video>
-
-            <button class="sound-toggle" id="soundToggle" type="button" aria-label="Ativar ou desativar som">🔇</button>
-
-            <div class="video-fallback" id="videoFallback">
-              <span class="play">▶</span>
-              <strong>Vídeo com a Giszelle</strong>
-            </div>
-          </div>
-
-          <figure class="giszelle-photo">
-            <img src="assets/IMG_4774.PNG" alt="Giszelle durante seu ensaio profissional">
-            <figcaption>Giszelle • Ensaio profissional</figcaption>
-          </figure>
-        </div>
-
-        <div class="experience-copy">
-          <span class="eyebrow">Foto + movimento</span>
-          <h2>Seu ensaio também pode<br><em>ganhar movimento.</em></h2>
-
-          <p>
-            Além das fotografias, você pode incluir um <strong>vídeo profissional em formato Reels</strong>,
-            produzido durante o próprio ensaio e pensado para apresentar sua imagem, sua marca e o seu trabalho
-            de uma forma mais dinâmica.
-          </p>
-
-          <p>
-            A captação acompanha o ensaio da Giszelle: aproveitamos os looks, detalhes, poses, bastidores e
-            cenários para criar um conteúdo com a mesma identidade das fotografias.
-          </p>
-
-          <div class="reels-benefits">
-            <span>Formato vertical 9:16</span>
-            <span>Captação durante o ensaio</span>
-            <span>Edição profissional</span>
-            <span>Pronto para Reels e redes sociais</span>
-          </div>
-
-          <div class="video-price-card">
-            <div>
-              <span class="video-price-kicker">Adicional ao ensaio</span>
-              <strong class="video-price">+ R$ 400</strong>
-            </div>
-            <p>Vídeo acompanhando o ensaio, com captação e edição para entrega em formato vertical.</p>
-          </div>
-
-          <a class="btn btn-dark js-whats"
-             data-package="Adicional de vídeo profissional em formato Reels - R$ 400"
-             href="#">
-             Quero adicionar o vídeo
-          </a>
-        </div>
-      </div>
-    </section>
-
-
+    <!-- Pacotes -->
     <section class="packages" id="pacotes">
       <div class="shell">
         <div class="section-heading centered">
@@ -234,6 +151,124 @@
       </div>
     </section>
 
+    <!-- Condições -->
+    <section class="jl-conditions" id="condicoes">
+      <div class="shell">
+        <div class="jl-condition-head">
+          <span class="eyebrow">Reserva e pagamento</span>
+          <h2>Informações para<br><em>confirmar seu ensaio.</em></h2>
+          <p>Após a escolha do pacote, a data é reservada mediante o pagamento do sinal.</p>
+        </div>
+
+        <div class="jl-condition-grid">
+          <article>
+            <span>01</span>
+            <strong>Entrada de R$ 100</strong>
+            <p>O sinal confirma e reserva a data do ensaio. O restante deve ser pago até a data marcada.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>Até 4x sem juros</strong>
+            <p>O pagamento pode ser dividido no cartão em até 4 parcelas sem juros.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>5% à vista</strong>
+            <p>Desconto para pagamento integral via Pix, depósito ou dinheiro.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <strong>Prazo de entrega</strong>
+            <p>Após a seleção das fotos, as imagens tratadas são entregues em alta resolução.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Estudio Adriana Mendes-->
+    <section class="studio" id="estudio">
+      <div class="studio-inner shell">
+        <div class="studio-copy">
+          <span class="eyebrow light">Nosso cenário de destaque</span>
+          <h2>Estúdio<br><em>Adriana Mendes</em></h2>
+          <p>Uma estrutura preparada para criar retratos limpos, sofisticados e versáteis, com iluminação profissional e diferentes possibilidades de composição.</p>
+          <div class="studio-note">
+            <strong>Estúdio Adriana Mendes incluso no pacote.</strong>
+            <span>Um espaço preparado para retratos profissionais, com diferentes possibilidades de luz, cenário e composição.</span>
+          </div>
+          <a class="btn btn-light" href="#pacotes">Quero fotografar no estúdio</a>
+        </div>
+        <div class="studio-photo">
+          <img src="assets/IMG_4772.JPG.jpeg" alt="Referência de retrato em estúdio">
+          <span class="photo-tag">Studio experience</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiência Video-->
+    <section class="experience" id="experiencia">
+      <div class="experience-grid shell">
+        <div class="experience-media">
+          <div class="reels-frame">
+            <video id="gVideo" autoplay muted loop playsinline poster="assets/giszelle-foto.jpg">
+              <source src="assets/Uma nova fase(MP4).mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+
+            <button class="sound-toggle" id="soundToggle" type="button" aria-label="Ativar ou desativar som">🔇</button>
+
+            <div class="video-fallback" id="videoFallback">
+              <span class="play">▶</span>
+              <strong>Vídeo com a Giszelle</strong>
+            </div>
+          </div>
+
+          <figure class="giszelle-photo">
+            <img src="assets/IMG_4774.PNG" alt="Giszelle durante seu vídeo profissional">
+            <figcaption>Giszelle • Vídeo profissional</figcaption>
+          </figure>
+        </div>
+
+        <div class="experience-copy">
+          <span class="eyebrow">Foto + movimento</span>
+          <h2>Seu ensaio também pode<br><em>ganhar movimento.</em></h2>
+
+          <p>
+            Além das fotografias, você pode incluir um <strong>vídeo profissional em formato Reels</strong>,
+            produzido durante o próprio ensaio e pensado para apresentar sua imagem, sua marca e o seu trabalho
+            de uma forma mais dinâmica.
+          </p>
+
+          <p>
+            A captação acompanha o ensaio da Giszelle: aproveitamos os looks, detalhes, poses, bastidores e
+            cenários para criar um conteúdo com a mesma identidade das fotografias.
+          </p>
+
+          <div class="reels-benefits">
+            <span>Formato vertical 9:16</span>
+            <span>Captação durante o ensaio</span>
+            <span>Edição profissional</span>
+            <span>Pronto para Reels e redes sociais</span>
+          </div>
+
+          <div class="video-price-card">
+            <div>
+              <span class="video-price-kicker">Adicional ao ensaio</span>
+              <strong class="video-price">+ R$ 400</strong>
+            </div>
+            <p>Vídeo acompanhando o ensaio, com captação e edição para entrega em formato vertical.</p>
+          </div>
+
+          <a class="btn btn-dark js-whats"
+             data-package="Adicional de vídeo profissional em formato Reels - R$ 400"
+             href="#">
+             Quero adicionar o vídeo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processo
     <section class="process shell">
       <div class="section-heading">
         <span class="eyebrow">Como funciona</span>
@@ -245,10 +280,11 @@
         <article><span>03</span><h3>Ensaio</h3><p>Você recebe direção durante toda a sessão para poses, expressões e movimentos naturais.</p></article>
         <article><span>04</span><h3>Entrega</h3><p>Você escolhe suas favoritas em uma galeria e recebe as imagens finais em alta qualidade.</p></article>
       </div>
-    </section>
+    </section> -->
 
+    <!--Final CTA-->
     <section class="final-cta">
-      <img src="assets/IMG_4773.JPG.jpeg" alt="Ensaio profissional">
+      <img src="assets/IMG_4766.JPG.jpeg" alt="Ensaio profissional">
       <div class="final-shade"></div>
       <div class="final-content shell">
         <span class="eyebrow light">Sua próxima fase começa aqui</span>
@@ -261,7 +297,7 @@
 
   <footer>
     <div class="shell footer-inner">
-      <div class="brand footer-brand"><span class="brand-mark">JL</span><span class="brand-text">fotografia</span></div>
+      <div class="brand footer-brand brand-logo"><img src="assets/logo-branca.png" alt="JL Fotografia"></div>
       <p>Retratos que comunicam presença, essência e profissionalismo.</p>
       <a href="https://instagram.com/joselivia.fotografia" target="_blank" rel="noopener">@joselivia.fotografia</a>
     </div>

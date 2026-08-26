@@ -617,3 +617,99 @@ footer{background:#11100f;color:#fff;padding:44px 0}
     font-size:3rem;
   }
 }
+
+
+/* ==================================================
+   IDENTIDADE JL — PALETA AZUL OFICIAL
+   Rich Black  #0D1321
+   Oxford      #1D2D44
+   Chambray    #3E5C76
+   Silver Lake #738CAB
+   Platinum    #E0E1DC
+================================================== */
+:root{
+  --ink:#0D1321 !important;
+  --paper:#F7F8F7 !important;
+  --sand:#E0E1DC !important;
+  --latte:#738CAB !important;
+  --taupe:#3E5C76 !important;
+  --white:#fff !important;
+  --line:rgba(29,45,68,.14) !important;
+}
+body{background:#F7F8F7;color:#0D1321}
+.hero,.studio,footer{background:#0D1321}
+.hero-overlay{
+  background:
+    linear-gradient(90deg,rgba(13,19,33,.84) 0%,rgba(29,45,68,.48) 48%,rgba(29,45,68,.12) 78%),
+    linear-gradient(0deg,rgba(13,19,33,.35),transparent 45%) !important;
+}
+.eyebrow{color:#3E5C76}
+.eyebrow.light{color:#E0E1DC}
+h1 em,h2 em{color:#738CAB}
+.brand-logo img{width:150px;height:auto;object-fit:contain}
+.footer-brand img{width:135px}
+.btn-dark,.floating-whats{background:#1D2D44}
+.btn-outline{border-color:#1D2D44;color:#1D2D44}
+.studio-note{border-color:rgba(224,225,220,.22)}
+.packages{background:#E0E1DC}
+.package{background:#F7F8F7}
+.package.featured{background:#fff}
+.package-kicker,.price-note,.reels-label{color:#3E5C76}
+.video-price-card{background:#1D2D44}
+.final-shade{
+  background:linear-gradient(90deg,rgba(13,19,33,.88),rgba(29,45,68,.42) 58%,rgba(29,45,68,.08))
+}
+
+/* Reserva e pagamento */
+.jl-conditions{
+  background:#1D2D44;
+  color:#fff;
+  padding:105px 0;
+}
+.jl-condition-head{
+  max-width:720px;
+  margin-bottom:48px;
+}
+.jl-condition-head h2{
+  font-family:"Italiana",serif;
+  font-weight:400;
+  font-size:clamp(3rem,5vw,5.3rem);
+  line-height:.95;
+  margin:15px 0 18px;
+}
+.jl-condition-head p{color:rgba(255,255,255,.68);line-height:1.7}
+.jl-condition-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+.jl-condition-grid article{
+  min-height:190px;
+  border:1px solid rgba(224,225,220,.18);
+  padding:24px 20px;
+}
+.jl-condition-grid article>span{
+  font-family:"Italiana",serif;
+  font-size:2rem;
+  color:#738CAB;
+}
+.jl-condition-grid strong{
+  display:block;
+  margin:32px 0 8px;
+  font-size:.9rem;
+}
+.jl-condition-grid p{
+  margin:0;
+  color:rgba(255,255,255,.62);
+  font-size:.78rem;
+  line-height:1.55;
+}
+@media(max-width:700px){
+  .brand-logo img{width:112px}
+  .jl-conditions{padding:68px 0}
+  .jl-condition-head h2{font-size:2.8rem}
+  .jl-condition-grid{grid-template-columns:1fr 1fr;gap:7px}
+  .jl-condition-grid article{min-height:155px;padding:18px 14px}
+  .jl-condition-grid strong{margin:20px 0 7px;font-size:.78rem}
+  .jl-condition-grid p{font-size:.68rem}
+}

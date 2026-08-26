@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0D1321">
+  <title>Batizado | JL Fotografia</title>
+  <meta name="description" content="Orçamento para cobertura fotográfica de Batizado. Um registro sensível, respeitoso e profundamente sacramental.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Marcellus&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --green:#102722;
+      --green-2:#17352e;
+      --ivory:#f8f6f0;
+      --ivory-2:#eee8dc;
+      --gold:#c3a269;
+      --blue:#7d9dab;
+      --ink:#18221f;
+      --muted:#6d736f;
+      --white:#fff;
+      --line:rgba(16,39,34,.13);
+      --shadow:0 22px 60px rgba(16,39,34,.10);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"DM Sans",sans-serif;
+      color:var(--ink);
+      background:var(--ivory);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    img{display:block;width:100%}
+    a{text-decoration:none;color:inherit}
+    h1,h2,h3{font-family:"Italiana",serif;font-weight:400;margin:0}
+    .shell{width:min(1180px,calc(100% - 40px));margin:auto}
+    .eyebrow{
+      display:inline-block;
+      font-size:.66rem;
+      font-weight:700;
+      letter-spacing:.20em;
+      text-transform:uppercase;
+      color:var(--gold);
+    }
+
+    /* NAV */
+    .nav{
+      position:absolute;
+      z-index:5;
+      top:0;left:0;right:0;
+      height:82px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      color:#fff;
+    }
+    .brand{display:flex;align-items:baseline;gap:8px}
+    .brand-mark{font-family:"Italiana",serif;font-size:2rem}
+    .brand-text{font-size:.60rem;letter-spacing:.28em;text-transform:uppercase}
+    .nav a:last-child{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:5px}
+
+    /* HERO */
+    .hero{
+      min-height:780px;
+      height:100svh;
+      position:relative;
+      overflow:hidden;
+      background:var(--green);
+      color:#fff;
+    }
+    .hero>img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center 45%;
+      filter:saturate(.80) contrast(.95);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg,rgba(6,23,19,.82),rgba(6,23,19,.35) 50%,rgba(6,23,19,.12)),
+        linear-gradient(0deg,rgba(6,23,19,.52),transparent 55%);
+    }
+    .hero-content{
+      position:relative;
+      z-index:2;
+      padding-top:29vh;
+      max-width:1180px;
+    }
+    .hero-content h1{
+      font-size:clamp(4.6rem,9vw,9rem);
+      line-height:.84;
+      max-width:900px;
+      margin:18px 0 28px;
+    }
+    .hero-content h1 em{font-style:italic;color:#efe4cd}
+    .hero-content p{
+      max-width:590px;
+      color:rgba(255,255,255,.83);
+      line-height:1.75;
+      font-size:1.02rem;
+      margin:0 0 28px;
+    }
+    .hero-verse{
+      display:inline-flex;
+      align-items:center;
+      gap:13px;
+      padding:12px 0;
+      border-top:1px solid rgba(255,255,255,.28);
+      border-bottom:1px solid rgba(255,255,255,.28);
+      color:#f3ead8;
+      font-family:"Marcellus",serif;
+      font-size:.92rem;
+    }
+
+    /* INTRO SACRAMENT */
+    .sacrament{
+      padding:110px 0 90px;
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      gap:80px;
+      align-items:center;
+    }
+    .sacrament-photo{
+      position:relative;
+      background:#ddd;
+      overflow:hidden;
+    }
+    .sacrament-photo img{
+      height:670px;
+      object-fit:cover;
+      object-position:center 45%;
+    }
+    .cross{
+      position:absolute;
+      right:20px;
+      top:20px;
+      width:48px;
+      height:48px;
+      opacity:.85;
+    }
+    .cross::before,.cross::after{
+      content:"";
+      position:absolute;
+      background:#fff;
+      left:50%;top:50%;
+      transform:translate(-50%,-50%);
+    }
+    .cross::before{width:2px;height:44px}
+    .cross::after{height:2px;width:30px;top:42%}
+
+    .sacrament-copy h2{
+      font-size:clamp(3.5rem,6vw,6.5rem);
+      line-height:.92;
+      margin:16px 0 26px;
+    }
+    .sacrament-copy p{
+      color:var(--muted);
+      line-height:1.85;
+      max-width:620px;
+      font-size:1rem;
+    }
+    .sacrament-quote{
+      margin-top:30px;
+      padding:24px 0 0;
+      border-top:1px solid var(--line);
+      font-family:"Marcellus",serif;
+      color:var(--green);
+      font-size:1.1rem;
+      line-height:1.7;
+    }
+
+    /* DETAILS */
+    .details{
+      background:var(--green);
+      color:#fff;
+      padding:95px 0;
+    }
+    .details-head{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:end;
+      margin-bottom:55px;
+    }
+    .details-head h2{
+      font-size:clamp(3.2rem,5vw,5.5rem);
+      line-height:.94;
+      margin-top:14px;
+    }
+    .details-head p{
+      color:rgba(255,255,255,.68);
+      line-height:1.75;
+      max-width:520px;
+      margin:0;
+    }
+    .details-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:12px;
+    }
+    .detail{
+      padding:24px 20px;
+      border:1px solid rgba(255,255,255,.12);
+      min-height:160px;
+    }
+    .detail span{
+      display:block;
+      color:#d8c6a3;
+      font-family:"Italiana",serif;
+      font-size:2rem;
+      margin-bottom:28px;
+    }
+    .detail h3{
+      font-family:"DM Sans",sans-serif;
+      font-size:.94rem;
+      font-weight:700;
+      margin-bottom:8px;
+    }
+    .detail p{font-size:.8rem;line-height:1.55;color:rgba(255,255,255,.62);margin:0}
+
+    /* PACKAGES */
+    .packages{padding:110px 0;background:var(--ivory-2)}
+    .section-head{
+      max-width:730px;
+      text-align:center;
+      margin:0 auto 58px;
+    }
+    .section-head h2{
+      font-size:clamp(3.4rem,5.7vw,6rem);
+      line-height:.92;
+      margin:14px 0 18px;
+    }
+    .section-head p{color:var(--muted);line-height:1.7;margin:0 auto;max-width:580px}
+
+    .package-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+      align-items:stretch;
+    }
+    .package{
+      background:#fff;
+      padding:40px 30px 30px;
+      display:flex;
+      flex-direction:column;
+      position:relative;
+      min-height:690px;
+      border:1px solid rgba(16,39,34,.06);
+    }
+    .package.medium{background:#f9f6ef}
+    .package.premium{
+      background:var(--green);
+      color:#fff;
+      box-shadow:var(--shadow);
+      transform:translateY(-14px);
+    }
+    .badge{
+      position:absolute;
+      top:18px;right:18px;
+      padding:7px 10px;
+      background:var(--gold);
+      color:#fff;
+      font-size:.58rem;
+      font-weight:700;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .package-kicker{
+      font-size:.64rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color:var(--gold);
+      font-weight:700;
+      margin-bottom:12px;
+    }
+    .package h3{
+      font-size:2.8rem;
+      line-height:.94;
+      margin-bottom:15px;
+    }
+    .package-desc{
+      color:var(--muted);
+      line-height:1.6;
+      font-size:.86rem;
+      min-height:82px;
+    }
+    .premium .package-desc{color:rgba(255,255,255,.66)}
+    .price{
+      font-family:"Italiana",serif;
+      font-size:4rem;
+      border-top:1px solid var(--line);
+      padding-top:23px;
+      margin-top:10px;
+    }
+    .premium .price{border-color:rgba(255,255,255,.15)}
+    .price small{
+      font-family:"DM Sans",sans-serif;
+      font-size:.70rem;
+      font-weight:700;
+      vertical-align:top;
+      position:relative;
+      top:10px;
+      margin-right:5px;
+    }
+    .installments{
+      font-size:.75rem;
+      color:#8a837c;
+      margin-top:-3px;
+      margin-bottom:15px;
+    }
+    .premium .installments{color:#c5bcb4}
+    .package ul{
+      list-style:none;
+      padding:0;
+      margin:18px 0 28px;
+      border-top:1px solid var(--line);
+    }
+    .premium ul{border-color:rgba(255,255,255,.14)}
+    .package li{
+      padding:10px 0;
+      border-bottom:1px solid var(--line);
+      font-size:.82rem;
+      line-height:1.45;
+    }
+    .premium li{border-color:rgba(255,255,255,.14)}
+    .package li::before{content:"✦";margin-right:9px;color:var(--gold)}
+    .btn{
+      min-height:50px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:0 18px;
+      font-size:.75rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-weight:700;
+      margin-top:auto;
+      border:1px solid var(--green);
+    }
+    .package:not(.premium) .btn{background:var(--green);color:#fff}
+    .premium .btn{background:#fff;color:var(--green);border-color:#fff}
+
+    /* PREMIUM VIDEO */
+    .video-section{
+      padding:110px 0;
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:75px;
+      align-items:center;
+    }
+    .video-photo{
+      position:relative;
+      background:#ddd;
+      overflow:hidden;
+    }
+    .video-photo img{
+      height:620px;
+      object-fit:cover;
+      object-position:center 42%;
+    }
+    .video-seal{
+      position:absolute;
+      right:18px;
+      bottom:18px;
+      width:104px;
+      height:104px;
+      border-radius:50%;
+      background:rgba(16,39,34,.92);
+      color:#fff;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      padding:12px;
+      font-size:.60rem;
+      line-height:1.4;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+    }
+    .video-copy h2{
+      font-size:clamp(3.4rem,5.7vw,6.2rem);
+      line-height:.92;
+      margin:15px 0 24px;
+    }
+    .video-copy p{color:var(--muted);line-height:1.8}
+    .exclusive{
+      margin:28px 0;
+      padding:22px 0;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      display:grid;
+      gap:6px;
+    }
+    .exclusive strong{
+      font-family:"Italiana",serif;
+      font-size:2rem;
+      font-weight:400;
+      color:var(--green);
+    }
+    .exclusive span{font-size:.82rem;color:var(--muted);line-height:1.55}
+
+    /* DELIVERY */
+    .delivery{
+      background:#fff;
+      padding:105px 0;
+    }
+    .delivery-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:65px;
+      align-items:center;
+    }
+    .delivery h2{
+      font-size:clamp(3.4rem,5.5vw,5.8rem);
+      line-height:.93;
+      margin:14px 0 24px;
+    }
+    .delivery p{color:var(--muted);line-height:1.8}
+    .delivery-list{
+      display:grid;
+      gap:12px;
+    }
+    .delivery-item{
+      padding:22px;
+      border:1px solid var(--line);
+      display:grid;
+      grid-template-columns:auto 1fr;
+      gap:16px;
+      align-items:start;
+    }
+    .delivery-icon{
+      font-family:"Italiana",serif;
+      color:var(--gold);
+      font-size:2rem;
+      line-height:1;
+    }
+    .delivery-item strong{display:block;margin-bottom:5px}
+    .delivery-item span{font-size:.82rem;color:var(--muted);line-height:1.5}
+
+    /* CONDITIONS */
+    .conditions{
+      padding:95px 0;
+      background:#f0ece4;
+    }
+    .conditions-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:12px;
+    }
+    .condition{
+      background:#fff;
+      padding:24px;
+    }
+    .condition span{
+      font-family:"Italiana",serif;
+      font-size:1.9rem;
+      color:var(--gold);
+    }
+    .condition strong{display:block;margin:22px 0 8px}
+    .condition p{font-size:.80rem;color:var(--muted);line-height:1.55;margin:0}
+
+    /* FINAL */
+    .final{
+      position:relative;
+      min-height:610px;
+      color:#fff;
+      overflow:hidden;
+      background:var(--green);
+    }
+    .final>img{
+      position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;
+    }
+    .final::after{
+      content:"";
+      position:absolute;inset:0;
+      background:linear-gradient(90deg,rgba(6,23,19,.82),rgba(6,23,19,.35),rgba(6,23,19,.12));
+    }
+    .final-content{
+      position:relative;
+      z-index:2;
+      padding-top:150px;
+    }
+    .final-content h2{
+      font-size:clamp(3.5rem,6vw,6.4rem);
+      line-height:.90;
+      max-width:830px;
+      margin:15px 0 24px;
+    }
+    .final-content p{
+      max-width:520px;
+      color:rgba(255,255,255,.78);
+      line-height:1.75;
+    }
+    .final .btn{
+      display:inline-flex;
+      width:auto;
+      margin-top:24px;
+      background:#fff;
+      color:var(--green);
+      border-color:#fff;
+      min-width:230px;
+    }
+
+    footer{
+      background:#0a1815;
+      color:#fff;
+      padding:38px 0;
+    }
+    .footer-inner{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:20px;
+      align-items:center;
+    }
+    .footer-inner p{margin:0;text-align:center;color:#9fa8a4;font-size:.78rem}
+    .footer-inner a{text-align:right;font-size:.78rem}
+
+    /* MOBILE */
+    @media(max-width:900px){
+      .sacrament,.video-section,.delivery-grid,.details-head{grid-template-columns:1fr}
+      .details-grid,.conditions-grid{grid-template-columns:1fr 1fr}
+      .package-grid{grid-template-columns:1fr}
+      .package.premium{transform:none}
+      .package{min-height:auto}
+      .footer-inner{grid-template-columns:1fr;text-align:center}
+      .footer-inner a{text-align:center}
+    }
+
+    @media(max-width:600px){
+      .shell{width:min(100% - 24px,1180px)}
+      .nav{height:66px}
+      .brand-mark{font-size:1.7rem}
+      .brand-text{font-size:.52rem}
+      .hero{min-height:650px;height:88svh}
+      .hero>img{object-position:center 48%}
+      .hero-content{padding-top:36vh}
+      .hero-content h1{font-size:3.7rem}
+      .hero-content p{font-size:.88rem;line-height:1.6}
+      .hero-verse{font-size:.74rem}
+
+      .sacrament{padding:68px 0 58px;gap:28px}
+      .sacrament-photo img{height:410px}
+      .sacrament-copy h2{font-size:3rem}
+      .sacrament-copy p{font-size:.88rem;line-height:1.7}
+
+      .details,.packages,.video-section,.delivery,.conditions{padding:68px 0}
+      .details-head{gap:18px;margin-bottom:30px}
+      .details-head h2{font-size:2.8rem}
+      .details-head p{font-size:.85rem}
+      .details-grid{grid-template-columns:1fr 1fr;gap:8px}
+      .detail{min-height:145px;padding:18px 14px}
+      .detail span{font-size:1.55rem;margin-bottom:20px}
+      .detail h3{font-size:.82rem}
+      .detail p{font-size:.70rem}
+
+      .section-head{margin-bottom:36px}
+      .section-head h2{font-size:3rem}
+      .section-head p{font-size:.84rem}
+      .package-grid{gap:10px}
+      .package{padding:28px 20px 22px}
+      .package h3{font-size:2.35rem}
+      .package-desc{min-height:auto;font-size:.80rem}
+      .price{font-size:3.25rem}
+      .package li{font-size:.76rem;padding:9px 0}
+
+      .video-section{gap:28px}
+      .video-photo img{height:420px}
+      .video-copy h2{font-size:3rem}
+      .video-copy p{font-size:.87rem}
+      .video-seal{width:86px;height:86px;font-size:.50rem}
+
+      .delivery-grid{gap:30px}
+      .delivery h2{font-size:3rem}
+      .delivery p{font-size:.86rem}
+      .delivery-item{padding:18px}
+
+      .conditions-grid{grid-template-columns:1fr 1fr;gap:8px}
+      .condition{padding:18px}
+      .condition span{font-size:1.5rem}
+      .condition strong{margin:16px 0 6px;font-size:.82rem}
+      .condition p{font-size:.70rem}
+
+      .final{min-height:560px}
+      .final-content{padding-top:130px}
+      .final-content h2{font-size:3.1rem}
+      .final-content p{font-size:.86rem}
+    }
+  </style>
+
+  <style>
+    /* Identidade visual JL — paleta azul oficial */
+    :root{
+      --green:#0D1321;
+      --green-2:#1D2D44;
+      --ivory:#F7F8F7;
+      --ivory-2:#E0E1DC;
+      --gold:#738CAB;
+      --blue:#3E5C76;
+      --ink:#0D1321;
+      --muted:#5F6D7A;
+      --white:#fff;
+      --line:rgba(29,45,68,.14);
+      --shadow:0 22px 60px rgba(13,19,33,.12);
+    }
+    body{background:#F7F8F7}
+    .brand-logo img{width:150px;height:auto;object-fit:contain}
+    .hero::after{
+      background:
+        linear-gradient(90deg,rgba(13,19,33,.88),rgba(29,45,68,.46) 52%,rgba(29,45,68,.12)),
+        linear-gradient(0deg,rgba(13,19,33,.50),transparent 55%);
+    }
+    .hero-content h1 em{color:#E0E1DC}
+    .hero-verse{color:#E0E1DC}
+    .details,.package.premium,footer{background:#0D1321}
+    .packages{background:#E0E1DC}
+    .package.medium{background:#F7F8F7}
+    .badge{background:#738CAB}
+    .final::after{
+      background:linear-gradient(90deg,rgba(13,19,33,.90),rgba(29,45,68,.45),rgba(29,45,68,.10));
+    }
+    .conditions{background:#E0E1DC}
+    .condition{background:#F7F8F7}
+
+    /* Sobre os fotógrafos */
+    .about-photographers{
+      padding:20px 0 100px;
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:75px;
+      align-items:center;
+    }
+    .about-photo{overflow:hidden;background:#E0E1DC}
+    .about-photo img{
+      height:590px;
+      object-fit:cover;
+      object-position:center 28%;
+    }
+    .about-copy h2{
+      font-size:clamp(3.3rem,5.6vw,6rem);
+      line-height:.92;
+      margin:15px 0 25px;
+    }
+    .about-copy p{
+      color:#5F6D7A;
+      line-height:1.8;
+      max-width:620px;
+    }
+    .about-signature{
+      margin-top:28px;
+      border-top:1px solid rgba(29,45,68,.14);
+      padding-top:20px;
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      align-items:end;
+    }
+    .about-signature span{
+      color:#3E5C76;
+      font-size:.65rem;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
+    .about-signature strong{
+      font-family:"Italiana",serif;
+      font-weight:400;
+      font-size:1.6rem;
+      color:#1D2D44;
+    }
+    @media(max-width:800px){
+      .about-photographers{grid-template-columns:1fr;gap:28px;padding:10px 0 68px}
+      .about-photo img{height:440px}
+    }
+    @media(max-width:600px){
+      .brand-logo img{width:112px}
+      .about-photo img{height:365px}
+      .about-copy h2{font-size:2.9rem}
+      .about-copy p{font-size:.86rem}
+      .about-signature{flex-direction:column;align-items:flex-start;gap:7px}
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="hero">
+    <img src="assets/hero-batizado.jpg" alt="Detalhe sacro de uma celebração de Batizado">
+
+    <nav class="nav shell">
+      <a class="brand brand-logo" href="../index_orcamentos_jl.html"><img src="assets/logo-branca.png" alt="JL Fotografia"></a>
+      <a href="#pacotes">Ver pacotes</a>
+    </nav>
+
+    <div class="hero-content shell">
+      <span class="eyebrow">Sacramento do Batismo</span>
+      <h1>Um novo começo<br><em>na fé.</em></h1>
+      <p>
+        O Batismo é mais do que uma celebração: é o início de uma vida nova em Cristo.
+        Nosso olhar acompanha esse momento com respeito, delicadeza e atenção ao que realmente importa.
+      </p>
+      <div class="hero-verse">✦ “Pela água e pelo Espírito, nasce uma nova vida.”</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="sacrament shell">
+      <div class="sacrament-photo">
+        <img src="assets/sacramento.jpg" alt="Momento do rito do Batismo">
+        <span class="cross" aria-hidden="true"></span>
+      </div>
+
+      <div class="sacrament-copy">
+        <span class="eyebrow">Um sacramento, uma memória</span>
+        <h2>Fotografar com<br><em>respeito ao sagrado.</em></h2>
+        <p>
+          Chegamos com antecedência, alinhamos os detalhes com a família e acompanhamos
+          o ritmo da celebração sem interferir no momento. Nosso objetivo é registrar a água,
+          a unção, a vela, os padrinhos, os pais e cada gesto que faz parte desse sacramento.
+        </p>
+        <p>
+          Mais do que criar imagens bonitas, queremos preservar a ternura, a fé e a emoção
+          que envolvem o Batismo e que serão lembradas pela família por muitos anos.
+        </p>
+        <div class="sacrament-quote">
+          “Quem crer e for batizado será salvo.”<br>
+          <small>Mc 16,16</small>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about-photographers shell" id="fotografos">
+      <div class="about-photo">
+        <img src="assets/fotografos.jpg" alt="Lívia e José, fotógrafos da JL Fotografia">
+      </div>
+
+      <div class="about-copy">
+        <span class="eyebrow">Por trás da JL Fotografia</span>
+        <h2>Oi, somos<br><em>Lívia e José.</em></h2>
+        <p>
+          Somos a dupla por trás da JL Fotografia. Em um sacramento tão importante,
+          acreditamos que fotografar também exige sensibilidade: saber estar presente,
+          respeitar o altar e perceber os pequenos gestos da família.
+        </p>
+        <p>
+          Trabalhamos de forma discreta e cuidadosa para que vocês vivam a celebração,
+          enquanto nós preservamos em imagens a fé, a emoção e a história daquele dia.
+        </p>
+        <div class="about-signature">
+          <span>Dois olhares • uma mesma memória</span>
+          <strong>JL Fotografia</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="shell">
+        <div class="details-head">
+          <div>
+            <span class="eyebrow">Nosso cuidado</span>
+            <h2>Cada detalhe tem<br>um significado.</h2>
+          </div>
+          <p>
+            A cobertura é pensada para preservar a solenidade da celebração e, ao mesmo tempo,
+            guardar os pequenos gestos que fazem esse dia ser único para a criança e sua família.
+          </p>
+        </div>
+
+        <div class="details-grid">
+          <article class="detail"><span>01</span><h3>Chegada antecipada</h3><p>Organização e alinhamento antes do início da celebração.</p></article>
+          <article class="detail"><span>02</span><h3>Discrição</h3><p>Registro respeitoso, sem interromper o rito ou chamar atenção.</p></article>
+          <article class="detail"><span>03</span><h3>Momentos essenciais</h3><p>Água, unção, vela, sinais do rito, pais, padrinhos e sacerdote.</p></article>
+          <article class="detail"><span>04</span><h3>Memória de família</h3><p>Nos pacotes selecionados, reservamos um momento para retratos após a celebração.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages" id="pacotes">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow">Investimento</span>
+          <h2>Três formas de<br><em>guardar esse dia.</em></h2>
+          <p>Do registro essencial da celebração a uma experiência completa, com fotografias, vídeo e entrega física especial.</p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package">
+            <span class="package-kicker">01 • Essencial</span>
+            <h3>Somente<br>Celebração</h3>
+            <p class="package-desc">Para quem deseja guardar o essencial do sacramento de forma simples e acessível.</p>
+
+            <div class="price"><small>R$</small> 290</div>
+            <div class="installments">ou 4x de R$ 72,50</div>
+
+            <ul>
+              <li>1 fotógrafo</li>
+              <li>Cobertura apenas da celebração</li>
+              <li>Momentos principais do rito</li>
+              <li>20 fotos digitais editadas</li>
+              <li>Galeria online para seleção</li>
+              <li>Sem sessão de fotos com familiares após a celebração</li>
+            </ul>
+
+            <a class="btn js-whats" data-package="Batizado Essencial - R$ 290" href="#">Escolher essencial</a>
+          </article>
+
+          <article class="package medium">
+            <span class="package-kicker">02 • Memória de Família</span>
+            <h3>Celebração<br>Completa</h3>
+            <p class="package-desc">Mais cobertura, dois olhares e um momento reservado para fotografar toda a família na igreja.</p>
+
+            <div class="price"><small>R$</small> 590</div>
+            <div class="installments">ou 4x de R$ 147,50</div>
+
+            <ul>
+              <li>2 fotógrafos</li>
+              <li>Cobertura completa da celebração</li>
+              <li>35 fotos digitais editadas</li>
+              <li>Fotos com pais, padrinhos e familiares após a celebração</li>
+              <li>5 fotos reveladas 15x20</li>
+              <li>1 porta-retrato</li>
+            </ul>
+
+            <a class="btn js-whats" data-package="Batizado Memória de Família - R$ 590" href="#">Escolher este pacote</a>
+          </article>
+
+          <article class="package premium">
+            <span class="badge">Exclusivo</span>
+            <span class="package-kicker">03 • Premium</span>
+            <h3>Herança<br>de Fé</h3>
+            <p class="package-desc">Uma experiência completa para transformar o Batismo em uma memória física, visual e viva.</p>
+
+            <div class="price"><small>R$</small> 890</div>
+            <div class="installments">ou 4x de R$ 222,50</div>
+
+            <ul>
+              <li>2 fotógrafos</li>
+              <li>Cobertura completa da celebração</li>
+              <li>45 fotos digitais editadas</li>
+              <li>Fotos com todos os familiares na igreja</li>
+              <li>Vídeo exclusivo acompanhando o Batizado</li>
+              <li>1 porta-retrato</li>
+              <li>Álbum autocolante</li>
+              <li>20 fotos reveladas 10x15 para o álbum</li>
+            </ul>
+
+            <a class="btn js-whats" data-package="Batizado Premium Herança de Fé - R$ 890" href="#">Quero a experiência premium</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section shell">
+      <div class="video-photo">
+        <img src="assets/bebe.jpg" alt="Criança durante o Batizado">
+        <div class="video-seal">Exclusivo<br>Premium<br>✦ vídeo</div>
+      </div>
+
+      <div class="video-copy">
+        <span class="eyebrow">Uma lembrança viva</span>
+        <h2>O Batismo em<br><em>foto e movimento.</em></h2>
+        <p>
+          No pacote Premium, além das fotografias, o Batizado recebe um registro em vídeo feito
+          especialmente para acompanhar o ritmo e a emoção da celebração.
+        </p>
+        <p>
+          A proposta é criar um filme curto e sensível, valorizando os gestos do rito, a família,
+          os padrinhos e os detalhes que fazem parte desse dia — um conteúdo exclusivo,
+          pensado para ser revisto e compartilhado.
+        </p>
+
+        <div class="exclusive">
+          <strong>Vídeo incluso somente no Premium</strong>
+          <span>Captação acompanhando a celebração + edição final exclusiva da JL Fotografia.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div class="delivery-grid shell">
+        <div>
+          <span class="eyebrow">Entrega especial</span>
+          <h2>Memórias para<br><em>guardar nas mãos.</em></h2>
+          <p>
+            Nos pacotes Médio e Premium, a experiência vai além da galeria digital.
+            Preparamos uma entrega física para que esse sacramento também faça parte da casa e da história da família.
+          </p>
+        </div>
+
+        <div class="delivery-list">
+          <div class="delivery-item">
+            <span class="delivery-icon">✦</span>
+            <div><strong>Pacote Médio</strong><span>Porta-retrato + 5 fotografias reveladas no tamanho 15x20.</span></div>
+          </div>
+          <div class="delivery-item">
+            <span class="delivery-icon">✦</span>
+            <div><strong>Pacote Premium</strong><span>Porta-retrato + álbum autocolante + 20 fotografias reveladas 10x15 para montar e guardar em família.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conditions">
+      <div class="shell">
+        <div class="section-head">
+          <span class="eyebrow">Informações importantes</span>
+          <h2>Reserva, pagamento<br>e entrega.</h2>
+        </div>
+
+        <div class="conditions-grid">
+          <article class="condition"><span>01</span><strong>Reserva da data</strong><p>R$ 100 no agendamento. O restante pode ser pago até a data do Batizado.</p></article>
+          <article class="condition"><span>02</span><strong>Parcelamento</strong><p>Até 4x sem juros no cartão. Também é possível parcelar em até 12x com juros.</p></article>
+          <article class="condition"><span>03</span><strong>Pagamento à vista</strong><p>5% de desconto para pagamento em Pix, depósito ou dinheiro.</p></article>
+          <article class="condition"><span>04</span><strong>Prazo das fotos</strong><p>A seleção é enviada por link. Após a escolha, as imagens tratadas são entregues em até 10 a 15 dias úteis.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <img src="assets/familia.jpg" alt="Família durante uma celebração de Batizado">
+      <div class="final-content shell">
+        <span class="eyebrow">JL Fotografia • Batizados</span>
+        <h2>Que essa memória<br>acompanhe a <em>fé.</em></h2>
+        <p>Conte para nós a data, a igreja e o horário do Batizado. Confirmamos a disponibilidade e ajudamos você a escolher o pacote ideal.</p>
+        <a class="btn js-whats" data-package="Orçamento de Batizado" href="#">Consultar disponibilidade</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner shell">
+      <div class="brand brand-logo"><img src="assets/logo-branca.png" alt="JL Fotografia"></div>
+      <p>Fotografias que preservam a fé, a família e a memória.</p>
+      <a href="https://instagram.com/joselivia.fotografia" target="_blank" rel="noopener">@joselivia.fotografia</a>
+    </div>
+  </footer>
+
+  <script>
+    const WHATSAPP = "5534996472198";
+
+    document.querySelectorAll(".js-whats").forEach(btn=>{
+      btn.addEventListener("click",e=>{
+        e.preventDefault();
+        const pack = btn.dataset.package || "Batizado";
+        const text = encodeURIComponent(
+          `Olá! Vi o orçamento de Batizado da JL Fotografia e gostaria de informações sobre: ${pack}.`
+        );
+        window.open(`https://wa.me/${WHATSAPP}?text=${text}`,"_blank","noopener");
+      });
+    });
+  </script>
+</body>
+</html>

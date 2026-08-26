@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0D1321" />
+  <title>Orçamentos | JL Fotografia</title>
+  <meta name="description" content="Escolha o tipo de ensaio ou cobertura e acesse o orçamento da JL Fotografia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171513;--ink2:#24201d;--paper:#f6f3ef;--paper2:#eee7e0;--sand:#dccdc0;--taupe:#9a8372;--white:#fff;--line:rgba(23,21,19,.12);--shadow:0 22px 60px rgba(29,23,18,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}.shell{width:min(1180px,calc(100% - 40px));margin-inline:auto}.eyebrow{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.20em;text-transform:uppercase;color:var(--taupe)}h1,h2,h3{font-family:"Italiana",serif;font-weight:400;margin:0}em{font-style:italic;color:var(--taupe)}
+    .hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid rgba(255,255,255,.08);right:-150px;top:-180px}.hero:after{content:"";position:absolute;width:290px;height:290px;border-radius:50%;border:1px solid rgba(255,255,255,.06);left:-110px;bottom:-120px}.nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:2}.brand{display:flex;align-items:baseline;gap:9px}.brand-mark{font-family:"Italiana",serif;font-size:2rem;letter-spacing:.05em}.brand-text{font-size:.62rem;letter-spacing:.30em;text-transform:uppercase}.nav-link{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.76);padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.35)}.hero-content{position:relative;z-index:2;padding:90px 0 110px;text-align:center}.hero-content .eyebrow{color:#d9c8ba}.hero-content h1{font-size:clamp(4rem,8vw,7.6rem);line-height:.88;max-width:900px;margin:18px auto 22px}.hero-content p{max-width:610px;margin:0 auto;color:rgba(255,255,255,.72);line-height:1.75;font-size:1rem}
+    .intro{padding:95px 0 55px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end}.intro h2{font-size:clamp(3rem,5vw,5rem);line-height:.96;margin-top:14px}.intro p{margin:0;line-height:1.8;color:#706862;max-width:520px}.budgets{padding:30px 0 110px}.budget-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.budget-card{position:relative;background:#fff;min-height:330px;padding:38px;border:1px solid rgba(23,21,19,.07);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:.28s ease}.budget-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.budget-card.dark{background:var(--ink2);color:#fff;border-color:transparent}.budget-card.highlight{background:var(--paper2)}.budget-number{font-family:"Italiana",serif;font-size:2rem;color:#b9a293}.budget-card.dark .budget-number{color:#d7c3b4}.budget-content{position:relative;z-index:2}.budget-kicker{display:block;font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--taupe);margin-bottom:12px}.budget-card.dark .budget-kicker{color:#cfbcaf}.budget-card h3{font-size:clamp(2.2rem,4vw,3.8rem);line-height:.94;margin-bottom:15px}.budget-card p{max-width:430px;color:#756d67;line-height:1.65;font-size:.9rem;margin:0}.budget-card.dark p{color:rgba(255,255,255,.65)}.budget-footer{position:relative;z-index:2;margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:20px;border-top:1px solid var(--line)}.budget-card.dark .budget-footer{border-color:rgba(255,255,255,.14)}.budget-link{font-size:.76rem;font-weight:700;letter-spacing:.10em;text-transform:uppercase}.arrow{width:42px;height:42px;border-radius:50%;border:1px solid currentColor;display:grid;place-items:center;transition:.25s ease}.budget-card:hover .arrow{transform:translateX(3px)}.budget-card.featured{grid-column:1/-1;min-height:300px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:40px;background:linear-gradient(120deg,#ded2c8,#f0e9e3)}.featured-side{display:flex;justify-content:flex-end;align-items:center}.featured-word{font-family:"Italiana",serif;font-size:clamp(4rem,8vw,7rem);line-height:.8;color:rgba(23,21,19,.10);text-align:right;user-select:none}
+    .note{display:flex;justify-content:space-between;gap:30px;align-items:center;padding:30px 0 90px;border-top:1px solid var(--line)}.note p{margin:0;color:#736a64;font-size:.86rem;line-height:1.6}.whatsapp{flex:none;display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:0 20px;background:var(--ink);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}footer{background:#11100f;color:#fff;padding:38px 0}.footer-inner{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:20px}.footer-inner p{margin:0;text-align:center;color:#9e9791;font-size:.78rem}.footer-inner a{text-align:right;font-size:.78rem}
+    @media(max-width:800px){.intro{grid-template-columns:1fr;gap:22px;padding-top:70px}.budget-card.featured{grid-template-columns:1fr}.featured-side{justify-content:flex-start}.featured-word{text-align:left;font-size:4.3rem}.footer-inner{grid-template-columns:1fr;text-align:center}.footer-inner a{text-align:center}}
+    @media(max-width:600px){.shell{width:min(100% - 24px,1180px)}.nav{min-height:66px}.brand-mark{font-size:1.7rem}.brand-text{font-size:.53rem}.nav-link{font-size:.59rem}.hero-content{padding:68px 0 78px}.hero-content h1{font-size:3.65rem}.hero-content p{font-size:.88rem;line-height:1.65}.intro{padding:58px 0 32px}.intro h2{font-size:2.75rem}.intro p{font-size:.88rem;line-height:1.65}.budget-grid{grid-template-columns:repeat(2,1fr);gap:8px}.budget-card{min-height:235px;padding:18px 14px}.budget-card.featured{min-height:245px;padding:22px 18px;gap:18px}.budget-number{font-size:1.45rem}.budget-kicker{font-size:.52rem;margin-bottom:8px;letter-spacing:.12em}.budget-card h3{font-size:1.72rem;margin-bottom:10px}.budget-card p{font-size:.72rem;line-height:1.45}.budget-footer{margin-top:20px;padding-top:12px}.budget-link{font-size:.58rem;letter-spacing:.05em}.arrow{width:32px;height:32px;font-size:.76rem}.featured-word{font-size:3.2rem}.budgets{padding-bottom:70px}.note{flex-direction:column;align-items:stretch;padding:25px 0 60px}.whatsapp{width:100%}}
+  
+    /* Paleta oficial JL */
+    :root{
+      --ink:#0D1321;
+      --ink-2:#1D2D44;
+      --paper:#F7F8F7;
+      --paper-2:#E0E1DC;
+      --sand:#E0E1DC;
+      --taupe:#3E5C76;
+      --white:#fff;
+      --line:rgba(29,45,68,.13);
+      --shadow:0 22px 60px rgba(13,19,33,.10);
+    }
+    .hero{background:#0D1321}
+    .hero-content .eyebrow{color:#738CAB}
+    .hero-content h1 em,h2 em{color:#738CAB}
+    .budget-card.dark{background:#1D2D44}
+    .budget-card.highlight{background:#E0E1DC}
+    .budget-number{color:#738CAB}
+    .budget-card.dark .budget-number{color:#738CAB}
+    .budget-kicker{color:#3E5C76}
+    .budget-card.dark .budget-kicker{color:#AEBED0}
+    .budget-card.featured{background:linear-gradient(120deg,#E0E1DC,#F7F8F7)}
+    .whatsapp{background:#1D2D44}
+    footer{background:#0D1321}
+    .brand-logo img{width:150px;height:auto;object-fit:contain}
+    .footer-inner .brand-logo img{width:135px}
+
+    .hub-about{
+      padding:10px 0 80px;
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+      gap:65px;
+      align-items:center;
+    }
+    .hub-about-photo{overflow:hidden;background:#E0E1DC}
+    .hub-about-photo img{
+      width:100%;
+      height:450px;
+      object-fit:cover;
+      object-position:center 30%;
+      display:block;
+    }
+    .hub-about-copy h2{
+      font-size:clamp(3rem,5vw,5rem);
+      line-height:.95;
+      margin:14px 0 22px;
+    }
+    .hub-about-copy p{color:#5F6D7A;line-height:1.8;max-width:600px}
+    @media(max-width:700px){
+      .brand-logo img{width:112px}
+      .hub-about{grid-template-columns:1fr;gap:24px;padding:0 0 55px}
+      .hub-about-photo img{height:330px}
+      .hub-about-copy h2{font-size:2.7rem}
+      .hub-about-copy p{font-size:.85rem}
+    }
+
+  
+    /* =========================
+       ACESSO PROTEGIDO
+    ========================== */
+    body.locked{overflow:hidden}
+    .access-lock{
+      position:fixed;
+      inset:0;
+      z-index:99999;
+      display:grid;
+      place-items:center;
+      padding:20px;
+      background:
+        radial-gradient(circle at top right,rgba(115,140,171,.15),transparent 34%),
+        linear-gradient(145deg,#0D1321,#1D2D44);
+      color:#fff;
+    }
+    .access-lock.hidden{display:none}
+    .access-card{
+      width:min(430px,100%);
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(224,225,220,.15);
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      padding:34px 28px 28px;
+      text-align:center;
+      box-shadow:0 28px 80px rgba(0,0,0,.28);
+    }
+    .access-logo{
+      width:150px;
+      max-width:55%;
+      margin:0 auto 28px;
+      display:block;
+    }
+    .access-kicker{
+      display:block;
+      color:#9EB0C4;
+      font-size:.61rem;
+      font-weight:700;
+      letter-spacing:.20em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+    .access-card h2{
+      font-size:clamp(2.4rem,7vw,3.7rem);
+      line-height:.95;
+      margin-bottom:12px;
+      color:#fff;
+    }
+    .access-card h2 em{color:#738CAB}
+    .access-card p{
+      margin:0 auto 24px;
+      max-width:330px;
+      color:rgba(255,255,255,.65);
+      font-size:.82rem;
+      line-height:1.65;
+    }
+    .password-wrap{
+      display:grid;
+      grid-template-columns:1fr auto;
+      background:#fff;
+      border:1px solid rgba(255,255,255,.18);
+      overflow:hidden;
+    }
+    .password-wrap input{
+      width:100%;
+      min-width:0;
+      border:0;
+      outline:0;
+      padding:15px 16px;
+      color:#0D1321;
+      background:#fff;
+      font-family:"DM Sans",sans-serif;
+      font-size:.9rem;
+    }
+    .password-wrap button{
+      border:0;
+      padding:0 18px;
+      background:#738CAB;
+      color:#fff;
+      font-weight:700;
+      font-size:.68rem;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      cursor:pointer;
+    }
+    .access-error{
+      min-height:18px;
+      margin-top:12px;
+      color:#F0B7B7;
+      font-size:.72rem;
+    }
+    .access-help{
+      margin-top:18px !important;
+      font-size:.68rem !important;
+      color:rgba(255,255,255,.42) !important;
+    }
+    @media(max-width:600px){
+      .access-card{padding:28px 20px 22px}
+      .access-logo{width:125px}
+      .password-wrap button{padding:0 14px;font-size:.60rem}
+    }
+
+  </style>
+</head>
+<body class="locked">
+
+  <div class="access-lock" id="accessLock" aria-modal="true" role="dialog" aria-labelledby="accessTitle">
+    <div class="access-card">
+      <img src="assets/logo-branca.png" alt="JL Fotografia" class="access-logo">
+      <span class="access-kicker">Área de orçamentos</span>
+      <h2 id="accessTitle">Acesso<br><em>reservado.</em></h2>
+      <p>Digite a senha para visualizar os orçamentos da JL Fotografia.</p>
+
+      <form id="accessForm">
+        <div class="password-wrap">
+          <input
+            type="password"
+            id="accessPassword"
+            placeholder="Digite a senha"
+            autocomplete="current-password"
+            aria-label="Senha de acesso"
+          >
+          <button type="submit">Entrar</button>
+        </div>
+        <div class="access-error" id="accessError" aria-live="polite"></div>
+      </form>
+
+      <p class="access-help">A senha é fornecida pela JL Fotografia.</p>
+    </div>
+  </div>
+
+  <header class="hero">
+    <nav class="nav shell">
+      <a href="#" class="brand brand-logo" aria-label="JL Fotografia"><img src="assets/logo-branca.png" alt="JL Fotografia"></a>
+      <a href="#orcamentos" class="nav-link">Orçamentos</a>
+    </nav>
+    <div class="hero-content shell">
+      <span class="eyebrow">JL Fotografia</span>
+      <h1>Escolha o seu<br><em>orçamento.</em></h1>
+      <p>Cada história pede um olhar diferente. Selecione abaixo o tipo de ensaio ou cobertura que você procura para conhecer nossos pacotes e investimentos.</p>
+    </div>
+  </header>
+  <main>
+    <section class="intro shell">
+      <div><span class="eyebrow">Nossos serviços</span><h2>Qual momento vamos<br><em>fotografar?</em></h2></div>
+      <p>Criamos propostas específicas para cada tipo de experiência. Toque no orçamento desejado para visualizar todos os detalhes, opções de pacotes, adicionais e formas de pagamento.</p>
+    </section>
+
+    <section class="hub-about shell">
+      <div class="hub-about-photo">
+        <img src="assets/fotografos-jl.jpeg" alt="Lívia e José, fotógrafos da JL Fotografia">
+      </div>
+      <div class="hub-about-copy">
+        <span class="eyebrow">Quem vai contar sua história</span>
+        <h2>Oi, somos<br><em>Lívia e José.</em></h2>
+        <p>
+          Somos a dupla por trás da JL Fotografia. Cada orçamento abaixo foi pensado
+          para uma experiência diferente, mas todos carregam o mesmo cuidado:
+          direção, presença, sensibilidade e imagens que façam sentido para a história de vocês.
+        </p>
+      </div>
+    </section>
+
+    <section class="budgets shell" id="orcamentos">
+      <div class="budget-grid">
+        <a class="budget-card featured" href="corporativos/index.html"><div class="budget-content"><span class="budget-number">01</span><span class="budget-kicker">Imagem profissional</span><h3>Corporativo &<br>Marca Pessoal</h3><p>Para profissionais, empreendedores e marcas que querem comunicar presença, confiança e personalidade.</p><div class="budget-footer"><span class="budget-link">Ver orçamento</span><span class="arrow">→</span></div></div><div class="featured-side"><div class="featured-word">sua<br>marca</div></div></a>
+        <a class="budget-card dark" href="casamentos/index.html"><div class="budget-content"><span class="budget-number">02</span><span class="budget-kicker">Histórias para sempre</span><h3>Casamentos</h3><p>Cobertura fotográfica para viver e guardar cada detalhe desse dia.</p></div><div class="budget-footer"><span class="budget-link">Ver orçamento</span><span class="arrow">→</span></div></a>
+        <a class="budget-card" href="batizados/index.html"><div class="budget-content"><span class="budget-number">03</span><span class="budget-kicker">Fé & família</span><h3>Batizados</h3><p>Registros delicados para guardar um momento tão especial em família.</p></div><div class="budget-footer"><span class="budget-link">Ver orçamento</span><span class="arrow">→</span></div></a>
+        <a class="budget-card highlight" href="aniversarios/index.html"><div class="budget-content"><span class="budget-number">04</span><span class="budget-kicker">Celebrações</span><h3>Aniversários</h3><p>Uma cobertura leve e espontânea para registrar pessoas, detalhes e emoções.</p></div><div class="budget-footer"><span class="budget-link">Ver orçamento</span><span class="arrow">→</span></div></a>
+        <a class="budget-card dark" href="ensaios/index.html"><div class="budget-content"><span class="budget-number">05</span><span class="budget-kicker">Retratos & histórias</span><h3>Ensaios</h3><p>Família, infantil, casal, gestante e outros momentos que merecem ser lembrados.</p></div><div class="budget-footer"><span class="budget-link">Ver orçamento</span><span class="arrow">→</span></div></a>
+        <a class="budget-card" href="15anos/index.html"><div class="budget-content"><span class="budget-number">06</span><span class="budget-kicker">Uma nova fase</span><h3>15 Anos</h3><p>Ensaio e cobertura pensados para transformar essa fase em memória.</p></div><div class="budget-footer"><span class="budget-link">Ver orçamento</span><span class="arrow">→</span></div></a>
+        <a class="budget-card highlight" href="sacramentos/index.html"><div class="budget-content"><span class="budget-number">07</span><span class="budget-kicker">Momentos de fé</span><h3>Comunhão & Crisma</h3><p>Registros de celebrações especiais vividas junto da família e da comunidade.</p></div><div class="budget-footer"><span class="budget-link">Ver orçamento</span><span class="arrow">→</span></div></a>
+      </div>
+    </section>
+    <section class="note shell"><p>Não encontrou exatamente o que procura? Fale com a gente e montamos uma proposta de acordo com a sua necessidade.</p><a class="whatsapp" href="https://wa.me/5534996472198?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20JL%20Fotografia." target="_blank" rel="noopener">Falar com a JL</a></section>
+  </main>
+  <footer><div class="footer-inner shell"><div class="brand brand-logo"><img src="assets/logo-branca.png" alt="JL Fotografia"></div><p>Fotografias que transformam momentos em memória.</p><a href="https://instagram.com/joselivia.fotografia" target="_blank" rel="noopener">@joselivia.fotografia</a></div></footer>
+
+  <script>
+    /* =====================================================
+       SENHA DE ACESSO
+       Troque apenas o valor abaixo.
+       Observação: como este site não usa servidor/banco,
+       esta é uma barreira simples contra acesso casual,
+       não uma proteção de segurança forte.
+    ====================================================== */
+    const JL_ACCESS_PASSWORD = "JL2026";
+
+    const accessLock = document.getElementById("accessLock");
+    const accessForm = document.getElementById("accessForm");
+    const accessPassword = document.getElementById("accessPassword");
+    const accessError = document.getElementById("accessError");
+
+    function unlockBudgetHub(){
+      accessLock.classList.add("hidden");
+      document.body.classList.remove("locked");
+      sessionStorage.setItem("jlOrcamentosLiberado", "1");
+    }
+
+    if(sessionStorage.getItem("jlOrcamentosLiberado") === "1"){
+      unlockBudgetHub();
+    }else{
+      setTimeout(() => accessPassword.focus(), 150);
+    }
+
+    accessForm.addEventListener("submit", function(event){
+      event.preventDefault();
+
+      if(accessPassword.value === JL_ACCESS_PASSWORD){
+        accessError.textContent = "";
+        unlockBudgetHub();
+      }else{
+        accessError.textContent = "Senha incorreta. Tente novamente.";
+        accessPassword.value = "";
+        accessPassword.focus();
+      }
+    });
+  </script>
+
+</body>
+</html>
