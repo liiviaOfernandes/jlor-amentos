@@ -1,55 +1,861 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0D1321">
+<meta name="description" content="Orçamento de fotografia para aniversários, festas infantis, 15 anos e eventos da JL Fotografia.">
 <title>Eventos | JL Fotografia</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-:root{--rich:#0D1321;--ox:#1D2D44;--ch:#3E5C76;--lake:#738CAB;--plat:#E0E1DC;--paper:#F7F7F4}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--rich);font-family:Montserrat,sans-serif}.wrap{width:min(1160px,calc(100% - 34px));margin:auto}img{width:100%;display:block}.serif,h1,h2,h3,.price{font-family:Italiana,serif;font-weight:400}.ey{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--lake)}
-nav{position:absolute;z-index:5;left:0;right:0;padding:20px 0}.navin{display:flex;align-items:center;justify-content:space-between}.logo{width:130px}.navin a{color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.13em;font-size:.62rem}
-.hero{min-height:88vh;display:flex;align-items:flex-end;position:relative;color:white;background:url('assets/hero.jpg') center/cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,19,33,.92),rgba(13,19,33,.45) 58%,rgba(13,19,33,.15)),linear-gradient(0deg,rgba(13,19,33,.65),transparent 55%)}.heroIn{position:relative;z-index:2;padding:150px 0 65px;max-width:790px}.hero h1{font-size:clamp(4.2rem,9vw,8.4rem);line-height:.82;margin:16px 0 24px}.hero h1 em{color:var(--plat);font-style:italic}.hero p{max-width:600px;line-height:1.75;color:rgba(255,255,255,.8);font-size:.86rem}.cta{display:inline-block;background:var(--plat);color:var(--rich);padding:15px 22px;text-decoration:none;margin-top:22px;text-transform:uppercase;letter-spacing:.13em;font-size:.64rem}
-.types{padding:85px 0}.types h2,.story h2,.head h2,.about h2,.pay h2{font-size:clamp(3rem,5vw,5.3rem);line-height:.95;margin:13px 0 28px}.types h2 em,.story h2 em,.head h2 em,.about h2 em,.pay h2 em{font-style:italic;color:var(--lake)}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid rgba(29,45,68,.18);background:#fff;padding:13px 16px;font-size:.7rem}
-.mosaic{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:8px}.mosaic img{height:440px;object-fit:cover}.mosaic img:nth-child(2),.mosaic img:nth-child(3){height:216px}.mosaic .stack{display:grid;gap:8px}
-.story{padding:95px 0;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.story img{height:600px;object-fit:cover}.story p,.about p{font-size:.86rem;line-height:1.8;color:#65717c}
-.packages{padding:95px 0;background:var(--plat)}.head{text-align:center;max-width:790px;margin:0 auto 45px}.head p{font-size:.82rem;line-height:1.7;color:#66717a}.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:920px;margin:auto}.card{background:#fff;padding:34px 30px;min-height:510px;display:flex;flex-direction:column;border-top:4px solid var(--ch)}.card.premium{background:var(--ox);color:white;border-color:var(--lake)}.card h3{font-size:2.5rem;margin:25px 0 5px}.sub{font-size:.62rem;text-transform:uppercase;letter-spacing:.15em;color:var(--ch)}.premium .sub{color:#bdc9d5}.card ul{list-style:none;padding:0;margin:27px 0;flex:1}.card li{padding:10px 0;border-bottom:1px solid rgba(29,45,68,.12);font-size:.78rem;line-height:1.45}.premium li{border-color:rgba(255,255,255,.12)}.price{font-size:3.2rem}.install{font-size:.68rem;color:#66717a}.premium .install{color:#c2cad2}
-.extras{padding:90px 0}.extraGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:35px}.extra{background:white;border:1px solid rgba(29,45,68,.12);padding:22px}.extra strong{font-family:Italiana,serif;font-size:1.45rem;font-weight:400;display:block;margin-bottom:8px}.extra span{font-size:.7rem;color:#66717a;line-height:1.5}
-.about{padding:95px 0;background:var(--rich);color:white}.aboutGrid{display:grid;grid-template-columns:.95fr 1.05fr;gap:65px;align-items:center}.about img{height:560px;object-fit:cover}.about p{color:rgba(255,255,255,.67)}.sig{font-family:Italiana,serif;color:var(--lake);font-size:1.7rem;margin-top:25px}
-.pay{padding:90px 0}.payGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.info{border:1px solid rgba(29,45,68,.13);padding:22px;background:#fff}.info b{font-family:Italiana,serif;font-size:1.8rem;font-weight:400;color:var(--lake)}.info strong{display:block;margin:18px 0 7px;font-size:.76rem}.info p{font-size:.67rem;line-height:1.55;color:#69737d}
-.final{min-height:62vh;position:relative;background:url('assets/momento.jpg') center/cover;display:flex;align-items:center;text-align:center;color:white}.final:after{content:"";position:absolute;inset:0;background:rgba(13,19,33,.7)}.finalIn{position:relative;z-index:2;max-width:790px}.final h2{font-size:clamp(3.4rem,7vw,6.8rem);line-height:.9;margin:14px 0 20px}.final p{font-size:.82rem;line-height:1.7;color:rgba(255,255,255,.75)}
-footer{background:var(--rich);color:#fff;padding:35px 0;text-align:center;font-size:.62rem;color:rgba(255,255,255,.5)}
-@media(max-width:700px){
-.wrap{width:calc(100% - 26px)}.logo{width:100px}.hero{min-height:78vh;background-position:center}.heroIn{padding:130px 0 48px}.hero h1{font-size:4rem}.hero p{font-size:.76rem}.types{padding:60px 0}.types h2,.story h2,.head h2,.about h2,.pay h2{font-size:2.9rem}
-.mosaic{grid-template-columns:1.3fr .7fr;gap:5px}.mosaic img{height:315px}.mosaic .stack{gap:5px}.mosaic img:nth-child(2),.mosaic img:nth-child(3){height:155px}
-.story,.aboutGrid{grid-template-columns:1fr;gap:28px;padding-top:65px;padding-bottom:65px}.story img,.about img{height:420px}.cards{grid-template-columns:1fr}.card{min-height:auto;padding:26px 21px}.card h3{font-size:2.2rem}.extraGrid{grid-template-columns:1fr 1fr}.extra{padding:17px 13px}.extra strong{font-size:1.2rem}.payGrid{grid-template-columns:1fr 1fr}.info{padding:17px 13px}.final{min-height:58vh}.final h2{font-size:3.5rem}
+:root{
+  --rich:#0D1321;
+  --ox:#1D2D44;
+  --ch:#3E5C76;
+  --lake:#738CAB;
+  --plat:#E0E1DC;
+  --paper:#F7F7F4;
+  --white:#FFFFFF;
+  --muted:#65717C;
+  --line:rgba(29,45,68,.14);
+  --shadow:0 22px 70px rgba(13,19,33,.11);
 }
-</style></head>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--rich);
+  font-family:Montserrat,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;width:100%}
+a{text-decoration:none;color:inherit}
+button,input{font:inherit}
+.wrap{width:min(1180px,calc(100% - 38px));margin:auto}
+.serif,h1,h2,h3,.price{font-family:Italiana,serif;font-weight:400}
+.ey{
+  display:inline-block;
+  font-size:.61rem;
+  letter-spacing:.21em;
+  text-transform:uppercase;
+  font-weight:600;
+  color:var(--lake)
+}
+
+/* NAV */
+.site-nav{
+  position:absolute;
+  top:0;left:0;right:0;
+  z-index:20;
+  padding:22px 0;
+}
+.navin{display:flex;align-items:center;justify-content:space-between}
+.logo{width:128px;height:auto}
+.nav-actions{display:flex;align-items:center;gap:24px}
+.nav-actions a{
+  color:white;
+  font-size:.58rem;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.nav-actions .nav-cta{
+  border:1px solid rgba(255,255,255,.35);
+  padding:10px 14px;
+}
+
+/* HERO */
+.hero{
+  min-height:92vh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(13,19,33,.94) 0%,rgba(13,19,33,.70) 38%,rgba(13,19,33,.20) 72%),
+    url('assets/toystory-bolo.jpg') center 38%/cover no-repeat;
+  color:white;
+}
+.hero:after{
+  content:"";
+  position:absolute;inset:auto 0 0 0;
+  height:45%;
+  background:linear-gradient(0deg,rgba(13,19,33,.68),transparent);
+  pointer-events:none;
+}
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding:160px 0 74px;
+  max-width:820px;
+}
+.hero .ey{color:#B8C6D4}
+.hero h1{
+  font-size:clamp(4.2rem,9vw,8.8rem);
+  line-height:.81;
+  letter-spacing:-.035em;
+  margin:15px 0 25px;
+}
+.hero h1 em{font-style:italic;color:var(--plat)}
+.hero p{
+  max-width:610px;
+  color:rgba(255,255,255,.79);
+  line-height:1.78;
+  font-size:.82rem;
+}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:0 20px;
+  border:1px solid transparent;
+  background:var(--rich);
+  color:white;
+  font-size:.58rem;
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  transition:.25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.light{background:var(--plat);color:var(--rich)}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.35)}
+.hero-meta{
+  display:flex;gap:25px;flex-wrap:wrap;
+  margin-top:38px;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.18);
+  max-width:700px;
+}
+.hero-meta div{max-width:170px}
+.hero-meta strong{display:block;font-family:Italiana,serif;font-size:1.28rem;font-weight:400}
+.hero-meta span{display:block;font-size:.54rem;color:rgba(255,255,255,.64);margin-top:4px;line-height:1.5}
+
+/* INTRO */
+.intro{
+  padding:100px 0 78px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:80px;
+  align-items:end;
+}
+.intro h2,.section-head h2,.story h2,.about h2,.pay h2{
+  font-size:clamp(3.4rem,5.9vw,6.1rem);
+  line-height:.91;
+  letter-spacing:-.02em;
+  margin:13px 0 0;
+}
+.intro h2 em,.section-head h2 em,.story h2 em,.about h2 em,.pay h2 em{
+  color:var(--lake);font-style:italic;
+}
+.intro p,.story p,.about p{
+  color:var(--muted);
+  font-size:.82rem;
+  line-height:1.85;
+}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:22px}
+.chip{
+  background:white;
+  border:1px solid var(--line);
+  padding:10px 12px;
+  font-size:.58rem;
+  letter-spacing:.02em;
+}
+
+/* PHOTO SHOWCASE */
+.showcase{
+  display:grid;
+  grid-template-columns:1.1fr .72fr .72fr;
+  grid-template-rows:280px 280px;
+  gap:7px;
+}
+.showcase figure{margin:0;overflow:hidden;position:relative;background:#ddd}
+.showcase figure:first-child{grid-row:1/3}
+.showcase figure:nth-child(4){grid-column:2/4}
+.showcase img{height:100%;object-fit:cover;transition:.5s ease}
+.showcase figure:hover img{transform:scale(1.025)}
+.showcase figure:after{
+  content:"";
+  position:absolute;inset:auto 0 0;height:35%;
+  background:linear-gradient(0deg,rgba(13,19,33,.27),transparent);
+}
+.showcase figcaption{
+  position:absolute;left:14px;bottom:12px;z-index:2;
+  color:#fff;font-size:.52rem;letter-spacing:.08em;text-transform:uppercase;
+}
+
+/* STORY */
+.story{
+  padding:100px 0;
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  gap:72px;
+  align-items:center;
+}
+.story-image{
+  min-height:620px;
+  position:relative;
+  background:url('assets/evento-adulto-02.jpg') center 25%/cover no-repeat;
+}
+.story-badge{
+  position:absolute;
+  right:-30px;bottom:32px;
+  background:var(--rich);
+  color:#fff;
+  width:180px;height:180px;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:20px;
+  font-family:Italiana,serif;
+  font-size:1.45rem;line-height:1.1;
+}
+.story-copy{max-width:560px}
+.story-copy .mini{
+  margin-top:25px;
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;
+}
+.story-copy .mini div{
+  background:#fff;border:1px solid var(--line);padding:15px;
+}
+.story-copy .mini strong{
+  display:block;font-family:Italiana,serif;font-size:1.45rem;font-weight:400;
+}
+.story-copy .mini span{font-size:.55rem;color:var(--muted);line-height:1.5}
+
+/* PACKAGES */
+.packages{
+  background:var(--plat);
+  padding:100px 0 110px;
+}
+.section-head{
+  max-width:830px;
+  text-align:center;
+  margin:0 auto 44px;
+}
+.section-head p{
+  max-width:650px;margin:14px auto 0;
+  color:#66727d;font-size:.77rem;line-height:1.75;
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  align-items:stretch;
+}
+.card{
+  position:relative;
+  background:white;
+  border:1px solid rgba(29,45,68,.09);
+  padding:30px 26px 27px;
+  display:flex;
+  flex-direction:column;
+  min-height:570px;
+  box-shadow:0 12px 30px rgba(13,19,33,.035);
+}
+.card.featured{
+  background:var(--ox);
+  color:#fff;
+  transform:translateY(-14px);
+  box-shadow:var(--shadow);
+}
+.card.featured:before{
+  content:"MAIS ESCOLHIDO";
+  position:absolute;top:0;left:0;right:0;
+  height:28px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--lake);
+  font-size:.48rem;
+  letter-spacing:.16em;
+  font-weight:600;
+}
+.card.featured{padding-top:45px}
+.card.signature{
+  border-top:4px solid var(--lake);
+}
+.package-num{font-size:.52rem;letter-spacing:.16em;color:var(--lake);text-transform:uppercase}
+.card.featured .package-num{color:#B9C8D7}
+.card h3{font-size:2.7rem;margin:13px 0 5px}
+.package-desc{
+  min-height:48px;
+  font-size:.61rem;
+  line-height:1.55;
+  color:#68737d;
+}
+.card.featured .package-desc{color:#bdc7d0}
+.card ul{list-style:none;padding:0;margin:24px 0 25px;flex:1}
+.card li{
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+  font-size:.67rem;
+  line-height:1.45;
+}
+.card.featured li{border-color:rgba(255,255,255,.11)}
+.card li:before{content:"✓";color:var(--lake);font-weight:600;margin-right:8px}
+.package-value{padding-top:8px}
+.package-value small{
+  display:block;font-size:.51rem;color:#747f88;text-transform:uppercase;letter-spacing:.11em;
+}
+.card.featured .package-value small{color:#aebbc7}
+.price{font-size:3rem;line-height:1;margin:6px 0}
+.install{font-size:.6rem;color:#717d87}
+.card.featured .install{color:#bcc7d1}
+.package-note{
+  margin-top:15px;
+  padding:12px;
+  background:#F1F3F2;
+  font-size:.53rem;
+  line-height:1.55;
+  color:#68737d;
+}
+.card.featured .package-note{background:rgba(255,255,255,.07);color:#c8d0d7}
+.package-action{margin-top:18px}
+.package-action .btn{width:100%}
+.card.featured .btn{background:var(--plat);color:var(--rich)}
+.signature-stamp{
+  position:absolute;top:18px;right:18px;
+  width:62px;height:62px;border-radius:50%;
+  display:grid;place-items:center;text-align:center;
+  border:1px solid var(--lake);
+  color:var(--lake);
+  font-size:.42rem;letter-spacing:.06em;text-transform:uppercase;
+}
+
+/* EXTRAS */
+.extras{padding:105px 0}
+.extras-head{
+  display:flex;justify-content:space-between;align-items:end;gap:40px;
+  margin-bottom:32px;
+}
+.extras-head h2{
+  font:400 clamp(3.2rem,5vw,5.3rem) Italiana,serif;
+  line-height:.93;margin:12px 0 0;
+}
+.extras-head p{max-width:420px;color:var(--muted);font-size:.75rem;line-height:1.7}
+.album-feature{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  background:var(--rich);
+  color:white;
+  margin-bottom:12px;
+  min-height:470px;
+}
+.album-photo{
+  position:relative;
+  background:
+    linear-gradient(rgba(13,19,33,.10),rgba(13,19,33,.10)),
+    url('assets/album.jpg') center 24%/cover no-repeat;
+}
+.album-photo:after{
+  content:"";
+  position:absolute;inset:auto 0 0;height:45%;
+  background:linear-gradient(0deg,rgba(13,19,33,.55),transparent);
+}
+.album-photo-label{
+  position:absolute;left:18px;bottom:18px;z-index:2;
+  font-size:.52rem;text-transform:uppercase;letter-spacing:.14em;
+}
+.album-copy{padding:55px 48px;display:flex;flex-direction:column;justify-content:center}
+.album-copy .ey{color:#AEBFD0}
+.album-copy h3{font-size:4rem;line-height:.9;margin:13px 0 18px}
+.album-copy h3 em{font-style:italic;color:var(--lake)}
+.album-copy p{color:#bac5cf;font-size:.76rem;line-height:1.75}
+.album-specs{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:20px 0}
+.album-specs div{padding:11px;border:1px solid rgba(255,255,255,.12)}
+.album-specs b{display:block;font-family:Italiana,serif;font-size:1.4rem;font-weight:400}
+.album-specs span{font-size:.49rem;color:#9fadb9}
+.album-prices{display:flex;gap:22px;align-items:end;margin-top:8px;flex-wrap:wrap}
+.album-prices .price{font-size:2.55rem}
+.album-prices small{display:block;font-size:.49rem;color:#aebbc7}
+.extra-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+}
+.extra{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:21px;
+  min-height:150px;
+  display:flex;flex-direction:column;
+}
+.extra .icon{
+  width:33px;height:33px;border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--lake);font-size:.7rem;
+  margin-bottom:17px;
+}
+.extra strong{font:400 1.42rem Italiana,serif}
+.extra p{font-size:.56rem;color:var(--muted);line-height:1.55;flex:1}
+.extra b{font-size:.7rem;color:var(--ch)}
+
+/* ABOUT */
+.about{background:var(--rich);color:#fff;padding:105px 0}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:70px;
+}
+.about-photo{
+  display:grid;grid-template-columns:1fr 1fr;gap:6px;
+}
+.about-photo img{height:510px;object-fit:cover}
+.about-photo img:nth-child(2){margin-top:55px;height:455px}
+.about p{color:#b4bec8}
+.signature{font:400 1.55rem Italiana,serif;color:var(--lake);margin-top:25px}
+
+/* PROCESS / PAYMENT */
+.pay{padding:105px 0}
+.pay-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:30px;
+}
+.info{
+  background:#fff;border:1px solid var(--line);padding:21px;
+}
+.info b{font:400 2rem Italiana,serif;color:var(--lake)}
+.info strong{display:block;margin:18px 0 7px;font-size:.68rem}
+.info p{font-size:.58rem;line-height:1.65;color:var(--muted)}
+.important{
+  display:flex;gap:14px;align-items:flex-start;
+  margin-top:10px;background:#EEF1F2;padding:15px 17px;
+}
+.important b{font-family:Italiana,serif;font-size:1.4rem;font-weight:400}
+.important p{margin:3px 0 0;font-size:.57rem;color:var(--muted);line-height:1.55}
+
+/* FINAL */
+.final{
+  min-height:72vh;
+  display:flex;align-items:center;
+  text-align:center;
+  position:relative;
+  color:#fff;
+  background:
+    linear-gradient(rgba(13,19,33,.62),rgba(13,19,33,.75)),
+    url('assets/casal-evento.jpg') center 35%/cover no-repeat;
+}
+.final-content{max-width:800px;position:relative;z-index:2}
+.final .ey{color:#bdc9d5}
+.final h2{
+  font:400 clamp(4rem,7vw,7.3rem) Italiana,serif;
+  line-height:.87;margin:15px 0 22px;
+}
+.final h2 em{font-style:italic;color:var(--plat)}
+.final p{color:rgba(255,255,255,.75);font-size:.75rem;line-height:1.75;max-width:600px;margin:auto}
+.final .btn{margin-top:25px;background:var(--plat);color:var(--rich)}
+
+footer{
+  background:#080D16;
+  color:rgba(255,255,255,.55);
+  padding:35px 0;
+  font-size:.54rem;
+  letter-spacing:.08em;
+}
+.footer-in{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.footer-logo{width:100px}
+.footer-links{display:flex;gap:20px}
+
+/* MOBILE */
+@media(max-width:900px){
+  .cards{grid-template-columns:1fr 1fr}
+  .card.signature{grid-column:1/-1}
+  .extra-grid{grid-template-columns:1fr 1fr}
+  .album-feature{grid-template-columns:1fr}
+  .album-photo{min-height:430px}
+}
+@media(max-width:720px){
+  .wrap{width:calc(100% - 26px)}
+  .nav-actions a:first-child{display:none}
+  .logo{width:104px}
+  .hero{min-height:83vh;background-position:58% center}
+  .hero-content{padding:135px 0 50px}
+  .hero h1{font-size:4.15rem;max-width:520px}
+  .hero p{font-size:.72rem;max-width:88%}
+  .hero-meta{gap:13px}
+  .hero-meta div{max-width:130px}
+  .intro,.story,.about-grid{grid-template-columns:1fr;gap:28px}
+  .intro{padding:70px 0 55px}
+  .intro h2,.section-head h2,.story h2,.about h2,.pay h2{font-size:3.1rem}
+  .showcase{grid-template-columns:1.1fr .9fr;grid-template-rows:300px 160px 160px}
+  .showcase figure:first-child{grid-row:1/3}
+  .showcase figure:nth-child(4){grid-column:1/3}
+  .showcase figure:nth-child(5){display:none}
+  .story{padding:70px 0}
+  .story-image{min-height:480px}
+  .story-badge{right:0;width:140px;height:140px;font-size:1.15rem}
+  .story-copy .mini{grid-template-columns:1fr 1fr}
+  .packages{padding:75px 0 85px}
+  .cards{grid-template-columns:1fr}
+  .card,.card.signature{grid-column:auto;min-height:auto}
+  .card.featured{transform:none}
+  .extras{padding:75px 0}
+  .extras-head{display:block}
+  .album-copy{padding:34px 22px}
+  .album-copy h3{font-size:3rem}
+  .album-photo{min-height:390px}
+  .extra-grid{grid-template-columns:1fr 1fr}
+  .about{padding:75px 0}
+  .about-photo img{height:380px}
+  .about-photo img:nth-child(2){height:330px;margin-top:35px}
+  .pay{padding:75px 0}
+  .pay-grid{grid-template-columns:1fr 1fr}
+  .final{min-height:65vh;background-position:56% center}
+  .final h2{font-size:3.8rem}
+  .footer-in{flex-direction:column;text-align:center}
+}
+@media(max-width:440px){
+  .hero h1{font-size:3.7rem}
+  .showcase{grid-template-columns:1fr 1fr;grid-template-rows:330px 160px}
+  .showcase figure:first-child{grid-column:1/3;grid-row:auto}
+  .showcase figure:nth-child(4){display:none}
+  .story-copy .mini,.pay-grid,.extra-grid{grid-template-columns:1fr}
+  .album-specs{grid-template-columns:1fr}
+}
+</style>
+</head>
+
 <body>
-<nav><div class="wrap navin"><img class="logo" src="assets/logo-branca.png" alt="JL Fotografia"><a href="#pacotes">Orçamento</a></div></nav>
-<header class="hero"><div class="wrap heroIn"><span class="ey">JL Fotografia • Eventos 2026</span><h1>A vida também<br>é feita de <em>celebrar.</em></h1><p>Aniversários, chá revelação, chá de bebê, festas infantis, bodas, confraternizações e tantos outros encontros que merecem virar memória.</p><a class="cta" href="#pacotes">Ver cobertura</a></div></header>
+<nav class="site-nav">
+  <div class="wrap navin">
+    <a href="#" aria-label="JL Fotografia"><img class="logo" src="assets/logo-branca.png" alt="JL Fotografia"></a>
+    <div class="nav-actions">
+      <a href="#adicionais">Adicionais</a>
+      <a class="nav-cta" href="#pacotes">Ver pacotes</a>
+    </div>
+  </div>
+</nav>
 
-<section class="types wrap"><span class="ey">Para todos os seus momentos</span><h2>Não importa o nome da festa.<br><em>Importa o que ela significa.</em></h2><div class="chips"><div class="chip">Aniversários</div><div class="chip">Festas infantis</div><div class="chip">Chá de bebê</div><div class="chip">Chá revelação</div><div class="chip">Bodas</div><div class="chip">Confraternizações</div><div class="chip">Formaturas intimistas</div><div class="chip">Eventos familiares</div><div class="chip">Outras celebrações</div></div></section>
+<header class="hero">
+  <div class="wrap hero-content">
+    <span class="ey">JL Fotografia • Eventos 2026</span>
+    <h1>O dia passa.<br>O que foi vivido<br><em>permanece.</em></h1>
+    <p>
+      Aniversários, festas infantis, 15 anos, chás, bodas e encontros em família.
+      Uma cobertura feita com presença, sensibilidade e atenção ao que acontece de verdade.
+    </p>
+    <div class="hero-buttons">
+      <a class="btn light" href="#pacotes">Conhecer os pacotes</a>
+      <a class="btn ghost" href="https://wa.me/5534992036533?text=Olá!%20Gostaria%20de%20consultar%20uma%20data%20para%20cobertura%20de%20evento%20com%20a%20JL%20Fotografia." target="_blank">Consultar minha data</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong>Galeria online</strong><span>Escolha suas favoritas com calma.</span></div>
+      <div><strong>Alta resolução</strong><span>Arquivos tratados para guardar e imprimir.</span></div>
+      <div><strong>Direção leve</strong><span>Sem interromper o que está sendo vivido.</span></div>
+    </div>
+  </div>
+</header>
 
-<section class="mosaic wrap"><img src="assets/crianca.jpg" alt="Evento infantil"><div class="stack"><img src="assets/detalhes.jpg" alt="Detalhes da festa"><img src="assets/familia.jpg" alt="Família no evento"></div><div class="stack"><img src="assets/momento.jpg" alt="Momento em família"><img src="assets/hero.jpg" alt="Decoração do evento"></div></section>
+<main>
+<section class="intro wrap">
+  <div>
+    <span class="ey">Cobertura de eventos</span>
+    <h2>Fotografamos a festa.<br><em>Mas guardamos a história.</em></h2>
+  </div>
+  <div>
+    <p>
+      Os detalhes da decoração importam. O parabéns importa. Mas também importam o abraço da avó,
+      a criança correndo, o encontro dos amigos e aquele sorriso que ninguém pediu para acontecer.
+      É isso que buscamos em cada cobertura.
+    </p>
+    <div class="chips">
+      <span class="chip">Aniversários</span>
+      <span class="chip">Festas infantis</span>
+      <span class="chip">15 anos</span>
+      <span class="chip">Chá de bebê</span>
+      <span class="chip">Chá revelação</span>
+      <span class="chip">Bodas</span>
+      <span class="chip">Confraternizações</span>
+      <span class="chip">Eventos familiares</span>
+    </div>
+  </div>
+</section>
 
-<section class="story wrap"><img src="assets/familia.jpg" alt="Registro em família"><div><span class="ey">Nosso jeito de fotografar</span><h2>Enquanto vocês vivem,<br><em>a gente observa.</em></h2><p>Chegamos com antecedência para organizar os equipamentos e alinhar os últimos detalhes. Gostamos de entender o que é importante para cada família e fotografar com leveza, respeitando o ritmo do evento — especialmente quando há crianças.</p><p>Registramos decoração, convidados, abraços, brincadeiras, parabéns, reações e aqueles pequenos momentos que ninguém planejou, mas que depois se tornam os favoritos.</p></div></section>
+<section class="showcase wrap" aria-label="Portfólio de eventos JL Fotografia">
+  <figure><img src="assets/momento.jpg" alt="Registro de mãe e criança em festa"><figcaption>Histórias em família</figcaption></figure>
+  <figure><img src="assets/IMG_2192.jpg" alt="Decoração de festa"><figcaption>Detalhes</figcaption></figure>
+  <figure><img src="assets/evento-menino.jpg" alt="Festa infantil"><figcaption>Infância</figcaption></figure>
+  <figure><img src="assets/IMG_0247.jpg" alt="Festa infantil"><figcaption>Infância</figcaption></figure>
 
-<section class="packages" id="pacotes"><div class="wrap"><div class="head"><span class="ey">Investimento</span><h2>Escolha quanto da sua<br><em>história quer guardar.</em></h2><p>Os mesmos pacotes podem ser usados para aniversários, chás, festas e outras celebrações.</p></div>
-<div class="cards">
-<article class="card"><span class="ey">Pacote 01</span><h3>Essencial</h3><span class="sub">Para celebrações menores</span><ul><li>1 hora de cobertura</li><li>35 fotos digitais editadas</li><li>10 fotos reveladas 15×20</li><li>Galeria online para seleção</li></ul><div class="price">R$ 460</div><span class="install">4x de R$ 115 sem juros</span></article>
-<article class="card premium"><span class="ey">Pacote 02</span><h3>Completo</h3><span class="sub">Para viver a festa sem pressa</span><ul><li>3 horas de cobertura</li><li>Todas as fotos selecionadas com edição básica</li><li>20 fotos reveladas 15×20</li><li>Galeria online para seleção</li><li>Mais tempo para decoração, convidados, momentos principais e retratos em família</li></ul><div class="price">R$ 670</div><span class="install">4x de R$ 167,50 sem juros</span></article>
-</div></div></section>
+</section>
+ 
 
-<section class="extras wrap"><span class="ey">Adicione ao seu pacote</span><h2 class="serif">Deixe a cobertura do seu jeito.</h2><div class="extraGrid">
-<div class="extra"><strong>+1h de cobertura</strong><span>R$ 100</span></div><div class="extra"><strong>+10 digitais</strong><span>R$ 150</span></div><div class="extra"><strong>+25 digitais</strong><span>R$ 375</span></div><div class="extra"><strong>Todas as digitais</strong><span>R$ 650 • edição básica</span></div><div class="extra"><strong>Vídeo vertical</strong><span>1 minuto • R$ 98</span></div><div class="extra"><strong>Vídeo horizontal</strong><span>5 minutos • R$ 150</span></div><div class="extra"><strong>Álbum autocolante</strong><span>15×20 • 20 páginas • R$ 200</span></div><div class="extra"><strong>Álbum diagramado</strong><span>20×20 • 15 lâminas • R$ 638</span></div><div class="extra"><strong>Álbum premium</strong><span>25×25 • 30 lâminas • R$ 799</span></div>
-</div></section>
+<section class="story wrap">
+  <div class="story-image">
+    <div class="story-badge">Vocês vivem.<br>Nós guardamos.</div>
+  </div>
+  <div class="story-copy">
+    <span class="ey">Nosso jeito de fotografar</span>
+    <h2>Presença sem<br><em>interromper o momento.</em></h2>
+    <p>
+      Chegamos preparados para acompanhar o ritmo da comemoração. Registramos decoração,
+      convidados, retratos em família, brincadeiras e os momentos principais sem transformar
+      a festa em uma sequência interminável de poses.
+    </p>
+    <p>
+      A direção aparece quando é necessária. No restante do tempo, observamos para que as
+      fotografias continuem tendo verdade.
+    </p>
+    <div class="mini">
+      <div><strong>Antes</strong><span>Alinhamento de horário, local e pontos importantes da festa.</span></div>
+      <div><strong>Durante</strong><span>Cobertura espontânea com atenção às pessoas e aos detalhes.</span></div>
+      <div><strong>Depois</strong><span>Seleção, tratamento e organização das fotografias.</span></div>
+      <div><strong>Entrega</strong><span>Galeria online em alta resolução e produtos escolhidos.</span></div>
+    </div>
+  </div>
+</section>
 
-<section class="about"><div class="wrap aboutGrid"><div><span class="ey">Quem vai guardar sua história</span><h2>Oi, somos<br><em>Lívia e José.</em></h2><p>Somos a dupla por trás da JL Fotografia. Apaixonados por contar histórias através das lentes, buscamos registrar muito mais do que imagens: sentimentos, conexões e a verdadeira essência de cada momento vivido.</p><p>Em eventos, nosso objetivo é fazer parte do dia sem interromper o dia. Assim, as fotografias ficam bonitas, espontâneas e com a personalidade de quem está comemorando.</p><div class="sig">JL Fotografia • memórias de verdade</div></div><img src="assets/fotografos.jpg" alt="Lívia e José"></div></section>
+<section class="packages" id="pacotes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="ey">Investimento</span>
+      <h2>Três formas de<br><em>guardar esse dia.</em></h2>
+      <p>
+        Escolha a cobertura que mais combina com o tamanho da sua celebração.
+        Todos os pacotes podem receber adicionais.
+      </p>
+    </div>
 
-<section class="pay"><div class="wrap"><span class="ey">Reserva e entrega</span><h2>Simples para contratar.<br><em>Especial para receber.</em></h2><div class="payGrid"><div class="info"><b>01</b><strong>Reserva</strong><p>R$ 100 no agendamento para garantir a data. O restante deve ser pago até o dia do evento.</p></div><div class="info"><b>02</b><strong>Pagamento</strong><p>Até 4x sem juros no cartão ou até 12x com juros. Pagamentos à vista têm 5% de desconto via Pix, depósito ou dinheiro.</p></div><div class="info"><b>03</b><strong>Seleção</strong><p>Em até 10 dias após o evento, enviamos um link para a seleção das fotografias favoritas.</p></div><div class="info"><b>04</b><strong>Entrega</strong><p>Após a escolha, as imagens tratadas e em alta resolução são entregues em 10 a 15 dias úteis.</p></div></div></div></section>
+    <div class="cards">
+      <article class="card">
+        <span class="package-num">Pacote 01</span>
+        <h3>Essencial</h3>
+        <div class="package-desc">Para celebrações menores e para quem quer registrar o que realmente importa.</div>
+        <ul>
+          <li>1 hora de cobertura</li>
+          <li>35 fotografias digitais editadas</li>
+          <li>10 fotografias reveladas 15×20</li>
+          <li>Galeria online para seleção</li>
+          <li>Entrega digital em alta resolução</li>
+        </ul>
+        <div class="package-value">
+          <small>Investimento</small>
+          <div class="price">R$ 460</div>
+          <span class="install">ou 4x de R$ 115</span>
+        </div>
+        <div class="package-action">
+          <a class="btn" target="_blank" href="https://wa.me/5534992036533?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Essencial%20de%20Eventos%20da%20JL%20Fotografia.">Quero este pacote</a>
+        </div>
+      </article>
 
-<section class="final"><div class="wrap finalIn"><span class="ey">Sua comemoração merece memória</span><h2>Vai passar rápido.<br>As fotos <em>ficam.</em></h2><p>Conte para a gente o que vocês estão celebrando e a data do evento. Nós cuidamos de transformar o que foi vivido em lembrança.</p><a class="cta" href="https://wa.me/5534996472198?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20cobertura%20do%20meu%20evento.">Consultar minha data</a></div></section>
-<footer>JL FOTOGRAFIA • EVENTOS 2026</footer>
-</body></html>
+      <article class="card featured">
+        <span class="package-num">Pacote 02</span>
+        <h3>Completo</h3>
+        <div class="package-desc">Para viver a festa sem pressa, com mais tempo para pessoas, detalhes e acontecimentos.</div>
+        <ul>
+          <li>3 horas de cobertura</li>
+          <li>Todas as fotografias selecionadas com edição básica</li>
+          <li>20 fotografias reveladas 15×20</li>
+          <li>Galeria online para seleção</li>
+          <li>Mais tempo para decoração, convidados e retratos em família</li>
+        </ul>
+        <div class="package-value">
+          <small>Investimento</small>
+          <div class="price">R$ 670</div>
+          <span class="install">ou 4x de R$ 167,50</span>
+        </div>
+        <div class="package-action">
+          <a class="btn" target="_blank" href="https://wa.me/5534992036533?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Completo%20de%20Eventos%20da%20JL%20Fotografia.">Quero este pacote</a>
+        </div>
+      </article>
+
+      <article class="card signature">
+        <span class="signature-stamp">com<br>álbum</span>
+        <span class="package-num">Pacote 03</span>
+        <h3>Memória</h3>
+        <div class="package-desc">A experiência completa para quem quer receber a história também impressa em um álbum diagramado.</div>
+        <ul>
+          <li>3 horas de cobertura</li>
+          <li>Todas as fotografias selecionadas com edição básica</li>
+          <li>20 fotografias reveladas 15×20</li>
+          <li>Galeria online para seleção e entrega</li>
+          <li><strong>Álbum diagramado 20×20 com 15 lâminas</strong></li>
+          <li>Projeto visual do álbum feito pela JL</li>
+        </ul>
+        <div class="package-value">
+          <small>Investimento</small>
+          <div class="price">R$ 1.308</div>
+          <span class="install">ou 4x de R$ 327</span>
+        </div>
+        <div class="package-note">
+          Valor formado pelo Pacote Completo + Álbum Diagramado 20×20 de 15 lâminas.
+        </div>
+        <div class="package-action">
+          <a class="btn" target="_blank" href="https://wa.me/5534992036533?text=Olá!%20Tenho%20interesse%20no%20Pacote%20Memória%20com%20Álbum%20Diagramado%20da%20JL%20Fotografia.">Quero com álbum</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="extras wrap" id="adicionais">
+  <div class="extras-head">
+    <div>
+      <span class="ey">Adicionais ao seu pacote</span>
+      <h2>Deixe a experiência<br><em>com a cara de vocês.</em></h2>
+    </div>
+    <p>
+      Você pode personalizar qualquer pacote. E se a ideia é transformar as fotografias
+      em uma lembrança de família, o álbum diagramado é o nosso destaque.
+    </p>
+  </div>
+
+  <article class="album-feature">
+    <div class="album-photo"><span class="album-photo-label">Destaque • álbum diagramado</span></div>
+    <div class="album-copy">
+      <span class="ey">O favorito para guardar</span>
+      <h3>Álbum<br><em>Diagramado.</em></h3>
+      <p>
+        Diferente do álbum autocolante, aqui cada página é montada digitalmente pela JL.
+        Nós organizamos a narrativa, combinamos fotografias, respiros e detalhes para que
+        o álbum conte a história da festa do começo ao fim.
+      </p>
+      <div class="album-specs">
+        <div><b>20×20</b><span>15 lâminas • projeto diagramado</span></div>
+        <div><b>25×25</b><span>30 lâminas • versão ampliada</span></div>
+      </div>
+      <div class="album-prices">
+        <div><small>20×20 • 15 lâminas</small><div class="price">R$ 638</div></div>
+        <div><small>25×25 • 30 lâminas</small><div class="price">R$ 799</div></div>
+      </div>
+      <a class="btn light" style="margin-top:24px;align-self:flex-start" target="_blank" href="https://wa.me/5534992036533?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20álbum%20diagramado%20da%20JL%20Fotografia.">Quero conhecer o álbum</a>
+    </div>
+  </article>
+
+  <div class="extra-grid">
+    <article class="extra">
+      <span class="icon">▣</span>
+      <strong>Álbum autocolante</strong>
+      <p>Uma experiência prática para montar em família. 15×20, 20 páginas, 20 fotos reveladas e capa personalizada.</p>
+      <b>R$ 200</b>
+    </article>
+    <article class="extra">
+      <span class="icon">＋</span>
+      <strong>Hora adicional</strong>
+      <p>Para estender a cobertura quando a programação pede mais tempo.</p>
+      <b>+ R$ 100 / hora</b>
+    </article>
+    <article class="extra">
+      <span class="icon">♡</span>
+      <strong>Fotos digitais extras</strong>
+      <p>10 digitais por R$ 150 • 25 digitais por R$ 375 • todas as digitais com edição básica por R$ 650.</p>
+      <b>A partir de R$ 150</b>
+    </article>
+    <article class="extra">
+      <span class="icon">□</span>
+      <strong>Fotos reveladas</strong>
+      <p>As fotografias reveladas são escolhidas dentre as imagens digitais do trabalho.</p>
+      <b>5 por R$ 35 • 10 por R$ 70</b>
+    </article>
+    <article class="extra">
+      <span class="icon">▶</span>
+      <strong>Vídeo vertical</strong>
+      <p>Vídeo curto de aproximadamente 1 minuto pensado para compartilhar no celular e redes sociais.</p>
+      <b>+ R$ 98</b>
+    </article>
+    <article class="extra">
+      <span class="icon">▰</span>
+      <strong>Vídeo horizontal</strong>
+      <p>Registro em vídeo de aproximadamente 5 minutos com os principais momentos da comemoração.</p>
+      <b>+ R$ 150</b>
+    </article>
+    <article class="extra">
+      <span class="icon">⌂</span>
+      <strong>Evento externo</strong>
+      <p>Para eventos fora da cidade, consulte previamente a taxa de deslocamento.</p>
+      <b>Sob consulta</b>
+    </article>
+    <article class="extra">
+      <span class="icon">✦</span>
+      <strong>Proposta personalizada</strong>
+      <p>Precisa de outro tempo de cobertura ou uma combinação específica? Montamos uma opção para você.</p>
+      <b>Fale com a JL</b>
+    </article>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="ey">Quem vai contar sua história</span>
+      <h2>Oi, somos<br><em>Lívia e José.</em></h2>
+      <p>
+        Somos a dupla por trás da JL Fotografia. Em eventos, gostamos de estar próximos o suficiente
+        para perceber o que está acontecendo e discretos o suficiente para que as pessoas continuem vivendo.
+      </p>
+      <p>
+        Nosso objetivo é entregar uma sequência que faça você lembrar não apenas de como a festa parecia,
+        mas de como aquele dia foi sentido.
+      </p>
+      <div class="signature">JL Fotografia • memórias de verdade</div>
+    </div>
+    <div class="about-photo">
+      <img src="assets/IMG_4769.JPG.jpeg" alt="Retrato fotografado pela JL">
+    </div>
+  </div>
+</section>
+
+<section class="pay">
+  <div class="wrap">
+    <span class="ey">Reserva, seleção e entrega</span>
+    <h2>Simples para contratar.<br><em>Gostoso de receber.</em></h2>
+
+    <div class="pay-grid">
+      <article class="info">
+        <b>01</b>
+        <strong>Reserva da data</strong>
+        <p>R$ 100 no agendamento para garantir a data. O restante pode ser pago até o dia do evento.</p>
+      </article>
+      <article class="info">
+        <b>02</b>
+        <strong>Pagamento</strong>
+        <p>Até 4x sem juros no cartão. Pagamentos à vista têm 5% de desconto via Pix, depósito ou dinheiro.</p>
+      </article>
+      <article class="info">
+        <b>03</b>
+        <strong>Seleção</strong>
+        <p>Em até 10 dias após o evento, enviamos a galeria para escolha das fotografias favoritas.</p>
+      </article>
+      <article class="info">
+        <b>04</b>
+        <strong>Entrega</strong>
+        <p>Após a seleção, as fotografias tratadas são entregues em alta resolução em aproximadamente 10 a 15 dias úteis.</p>
+      </article>
+    </div>
+
+    <div class="important">
+      <b>Importante</b>
+      <p>
+        Valores de revelações e álbuns seguem a tabela desta proposta. Para eventos externos,
+        confirme previamente eventual taxa de deslocamento. A disponibilidade da data só é garantida após a reserva.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap final-content">
+    <span class="ey">Vamos guardar essa história?</span>
+    <h2>A festa termina.<br>As fotografias<br><em>continuam contando.</em></h2>
+    <p>
+      Conte para a gente a data, o local e o que vocês estão celebrando.
+      A partir daí, cuidamos do restante.
+    </p>
+    <a class="btn" target="_blank" href="https://wa.me/5534992036533?text=Olá!%20Gostaria%20de%20consultar%20uma%20data%20para%20meu%20evento%20com%20a%20JL%20Fotografia.">Consultar disponibilidade</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-in">
+    <img class="footer-logo" src="assets/logo-branca.png" alt="JL Fotografia">
+    <div>JL FOTOGRAFIA • JOSÉ & LÍVIA • 2026</div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/joselivia.fotografia/" target="_blank">Instagram</a>
+      <a href="https://wa.me/5534992036533" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

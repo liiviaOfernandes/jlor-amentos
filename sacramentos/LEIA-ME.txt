@@ -1,0 +1,23 @@
+JL FOTOGRAFIA — SACRAMENTOS CLARO 2026
+
+Esta versão foi redesenhada com base:
+- no orçamento Sacramentos 2025 fornecido;
+- na referência visual floral/editorial enviada;
+- em uma paleta clara: branco, ivory, cinza azulado e azul JL.
+
+Arquivos:
+index.html
+style.css
+assets/
+
+Links atuais:
+Batizado -> ../batizados/index.html
+Primeira Comunhão -> comunhao.html
+Crisma -> crisma.html
+Casamento -> ../casamentos/index.html
+
+WhatsApp:
+5534992036533
+
+Observação:
+O arquivo assets/referencia-design.jpg é apenas uma referência visual e pode ser removido antes de publicar.
